@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sign sign_login"> 
+        <div class="container"> 
+          <div class="row d-flex align-items-center"> 
+            <div class="col-6 col-lg-4 order-lg-1"><a class="sign-logo" href="#"> <img src="assets/img/logo-dark.svg" alt="logo-dark"/></a></div>
+            <div class="col-6 col-lg-3 d-flex justify-content-end order-lg-3"><a class="sign-home" href="#"> 
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#arrow-3"></use>
+                </svg>На главную
+                <div class="sign-home__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#home"></use>
+                  </svg>
+                </div></a></div>
+            <div class="sign-links col-lg-5 order-lg-2"> <a href="#"> 
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#logout"></use>
+                </svg>
+                <h3>Login </h3>
+                <p>Login to account</p></a><a class="active" href="#"> 
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#reg"></use>
+                </svg>
+                <h3>Registration </h3>
+                <p>Create an account</p></a></div>
+          </div>
+          <div class="row"> 
+            <div class="col-lg-8 offset-lg-2">
+              <div class="m-title m-title_center">Войти в <b>аккаунт<span>.</span></b></div>
+              <div class="sign-url"> 
+                <div class="sign-url__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <h3>Убедитесь, что вы вводите свои данные на сайте</h3>
+                <div class="sign-url__val"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#lock"></use>
+                  </svg>
+                  <p> <span>https://</span>www.ovaxglobal.com</p>
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col-md-6">
+                  <div class="m-input__title">Your Email</div>
+                  <label class="m-input error" data-text="Пользователь с такой почтой уже зарегистрирован">
+                    <input type="text">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#email"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <div class="m-input__title">Your Password</div>
+                  <label class="m-input m-input_pass">
+                    <input type="password">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#pass"></use>
+                    </svg>
+                    <div class="m-input__show">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#show"></use>
+                      </svg>
+                    </div>
+                  </label><a class="sign-forgot" href="#">Я забыл свой пароль</a>
+                </div>
+              </div>
+              <div class="sign-auth">
+                <div class="sign-auth__top"> <img src="assets/img/sign-auth.svg" alt="sign-auth"/>
+                  <h3>Ваш аккаунт защищен двухфакторной аутентификацией. </h3>
+                  <p>Для авторизации необходимо ввести код из приложения-аутентификатора. </p>
+                </div>
+                <label class="sign-auth__input">
+                  <input type="text" placeholder="Введите код" required>
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#code"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="sign-auth sign-auth_mail">
+                <div class="sign-auth__top"> <img src="assets/img/sign-mail.svg" alt="sign-mail"/>
+                  <h3>Мы заметили изменение IP или браузера с последнего входа в аккаунт.</h3>
+                  <p>Для безопасности входа вам необходимо ввести одноразовый пароль, который мы прислали на вашу электронную почту.</p>
+                </div>
+                <label class="sign-auth__input">
+                  <input type="text" placeholder="Введите код" required>
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#code"></use>
+                  </svg>
+                </label>
+              </div>
+              <button class="m-btn m-btn_full">Войти</button>
+              <div class="sign-text">Еще нет аккаунта? <a href="#">Создайте его прямо сейчас</a></div>
+              <div class="sign-title">Или войти используя</div>
+              <div class="sign-soc"> <a href="#"><img src="assets/img/apple.svg" alt="apple"/></a><a href="#"><img src="assets/img/fb.svg" alt="fb"/></a><a href="#"><img src="assets/img/gg.svg" alt="gg"/></a></div>
+              <div class="sign-footer">
+                <div class="sign-text">Проблемы со входом? Напишите в <a href="#">службу поддержки</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

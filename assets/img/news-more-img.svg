@@ -1,0 +1,33 @@
+<svg width="227" height="197" viewBox="0 0 227 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.1" d="M0 60.5C0 54.701 4.70101 50 10.5 50H227V72H10.5C4.70102 72 0 67.299 0 61.5V60.5Z" fill="white"/>
+<rect opacity="0.1" x="13" y="58" width="30" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="13" y="82" width="30" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="131" y="82" width="22" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="131" y="58" width="22" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="173" y="82" width="22" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="173" y="58" width="22" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="13" y="130" width="30" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" width="47" height="28" rx="4" fill="white"/>
+<rect opacity="0.1" x="5" y="8" width="12" height="12" rx="4" fill="black"/>
+<path opacity="0.1" d="M0 108.5C0 102.701 4.70101 98 10.5 98H227V120H10.5C4.70102 120 0 115.299 0 109.5V108.5Z" fill="white"/>
+<path opacity="0.1" d="M0 156.5C0 150.701 4.70101 146 10.5 146H227V168H10.5C4.70102 168 0 163.299 0 157.5V156.5Z" fill="white"/>
+<rect opacity="0.1" x="58" width="56" height="197" rx="10.5" fill="black"/>
+<rect x="66" y="174" width="40" height="15" rx="4" fill="white"/>
+<rect opacity="0.2" x="77" y="179" width="18" height="5" rx="2.5" fill="#7B7B7B"/>
+<rect opacity="0.1" x="13" y="154" width="30" height="6" rx="3" fill="black"/>
+<rect opacity="0.1" x="13" y="106" width="30" height="6" rx="3" fill="black"/>
+<circle opacity="0.1" cx="142" cy="157" r="3" fill="black"/>
+<circle opacity="0.2" cx="86" cy="157" r="3" fill="white"/>
+<circle opacity="0.1" cx="184" cy="157" r="3" fill="black"/>
+<circle opacity="0.1" cx="142" cy="109" r="3" fill="black"/>
+<circle opacity="0.2" cx="86" cy="109" r="3" fill="white"/>
+<circle opacity="0.1" cx="184" cy="109" r="3" fill="black"/>
+<circle opacity="0.1" cx="142" cy="133" r="3" fill="black"/>
+<rect opacity="0.2" x="75" y="11" width="22" height="22" rx="4" fill="white"/>
+<rect opacity="0.2" x="75" y="58" width="22" height="6" rx="3" fill="white"/>
+<rect opacity="0.2" x="75" y="82" width="22" height="6" rx="3" fill="white"/>
+<circle opacity="0.2" cx="86" cy="133" r="3" fill="white"/>
+<circle opacity="0.1" cx="184" cy="133" r="3" fill="black"/>
+<rect opacity="0.1" x="22" y="8" width="20" height="5" rx="2.5" fill="black"/>
+<rect opacity="0.1" x="22" y="15" width="14" height="5" rx="2.5" fill="black"/>
+</svg>
