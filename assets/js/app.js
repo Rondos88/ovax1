@@ -152,6 +152,10 @@
           $(".nicescroll-box").getNiceScroll().resize();
         }, 1000);
       }
+
+      if($('.cab-table__wrap').length){
+        setTimeout(tableSticky(), 1000);
+      }
     });
   });
 
@@ -281,6 +285,19 @@
       //   })
       // }
     });
+  }
+
+  if($('.tip-trigger').length){
+    let tooltips = document.querySelectorAll('.tip-trigger');
+    tooltips.forEach(item => {
+      let temp = item.querySelector('.tip-wrap')
+
+      tippy(item, {
+        content: temp.innerHTML,
+        allowHTML: true,
+        theme: 'ovax',
+      });
+    })
   }
 
   // home charts end
@@ -479,15 +496,56 @@
 
   //table mousemove 
 
-  $(window).on('resize', function(){
+  
+  const tableSticky = () => {
     const tableWrap = $('.cab-table__wrap');
-    
     tableWrap.each(function(){
       let table = $(this).find('table');
 
       $(this).width() < table.width() ? table.addClass('sticky') : table.removeClass('sticky');
     })
-  })
+
+    $(window).on('resize', function(){
+      tableWrap.each(function(){
+        let table = $(this).find('table');
+  
+        $(this).width() < table.width() ? table.addClass('sticky') : table.removeClass('sticky');
+      })
+    })
+  }
+
+  if($('.cab-table__wrap').length){
+    tableSticky();
+  }
+
+  if($('.cab-refs-lvls__progress').length){
+    const progItems = document.querySelectorAll(".cab-refs-lvls__progress");
+    progItems.forEach(item => {
+      let totalLength = (item.offsetWidth * 2) + (item.offsetHeight * 2); 
+    
+      let progressVal = item.dataset.percent;
+      let backgroundPos;
+      let input = (progressVal > 100) ? 100 : progressVal;
+      let borderLen = (input / 100) * totalLength;
+      
+      if (borderLen <= item.offsetWidth) {
+        backgroundPos = `background-position: ` + (-item.offsetWidth + borderLen) + `px 0px, ${item.offsetWidth - 8}px -${item.offsetHeight}px, ${item.offsetWidth}px ${item.offsetHeight - 8}px, 0px ${item.offsetHeight}px`;
+        
+        item.setAttribute('style', backgroundPos);
+      } else if (borderLen <= (item.offsetWidth + item.offsetHeight)) {
+        backgroundPos = `background-position: 0px 0px, ${item.offsetWidth - 8}px ` + (-item.offsetHeight + (borderLen - item.offsetHeight)) + `px, ${item.offsetWidth}px ${item.offsetHeight - 8}px, 0px ${item.offsetHeight}px`;
+        item.setAttribute('style', backgroundPos);
+      } else if (borderLen <= (item.offsetWidth * 2 + item.offsetHeight)) {
+        backgroundPos = `background-position: 0px 0px, ${item.offsetWidth - 8}px 0px, ` + (item.offsetWidth - (borderLen - item.offsetWidth - item.offsetWidth)) + `px ${item.offsetHeight - 8}px, 0px ${item.offsetHeight}px`;
+        item.setAttribute('style', backgroundPos);
+      } else {
+        backgroundPos = `background-position: 0px 0px, ${item.offsetWidth - 8}px 0px, 0px ${item.offsetHeight - 8}px, 0px ` + (item.offsetHeight - (borderLen - (item.offsetHeight * 2) - item.offsetHeight)) + 'px';
+        item.setAttribute('style', backgroundPos);
+      }
+    })
+
+
+  }
 
   // career links
 
@@ -547,10 +605,14 @@
     $('.invest-table__side .invest-table__row .invest-table__title>span').each(function(i){
         let text = $(this).text();
         $('.invest-table__list .invest-table__item').each(function(){
-            $(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+')').prepend('<div class="title">'+text+'</div>');
+            if($(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+') .invest-table__check_gray').length){
+                $(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+')').prepend('<div class="title title_gray">'+text+'</div>');
+            }else{
+                $(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+')').prepend('<div class="title">'+text+'</div>');
+            }
+        
         });
     });
-
   }
   
   // cabinet js
