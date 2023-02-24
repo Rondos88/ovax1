@@ -551,16 +551,20 @@
   }
 
   // career links
-  window.addEventListener('resize', () => {
+  function scrollT(){
+    if($(window).width() <= 991){
       $('.career-rank-tabs__btn').on('click', function() {
         var $element = $(this);
         var position = $element.position().left;
-        if($(window).width() <= 991){
-          $(".career-rank-tabs__wrap .nicescroll-box").getNiceScroll(0).doScrollLeft(position, '1000');
-        }
-      });
-  });
+        $(".career-rank-tabs__wrap .nicescroll-box").getNiceScroll(0).doScrollLeft(position, '1000');
 
+      });
+    }
+  }
+  scrollT();
+  // $(window).resize(function () {
+  //   scrollT();
+  // });
 
 
  //  $('.career-rank-tabs__btn').on('click', function(){
