@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="copy-success">
+      <svg>
+        <use xlink:href="assets/img/sprite.svg#check"></use>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <div class="cab"> 
+        <div class="cab-notify__modal"> 
+          <div class="cab-notify__head">
+            <h3>Уведомления</h3>
+            <div class="cab-notify__link"> <img src="assets/img/check.svg"/>Mark all as read
+            </div>
+            <div class="cab-notify__sound active">
+              <div class="cab-notify__sound-on">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#sound"></use>
+                </svg>
+              </div>
+              <div class="cab-notify__sound-off">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#sound-off"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="cab-notify__content"> 
+            <div class="nicescroll-box"> 
+              <div class="wrap">  <a class="cab-notify__item" href="#">
+                  <div class="cab-notify__date"> 
+                    <p>10 May 2022, 11:21</p>
+                    <p class="yellow">Ticket</p>
+                  </div>
+                  <h3>Lorem ipsum dolor sit amet consectetur. Tellus lorem viverra urna praisl interdum.</h3></a><a class="cab-notify__item" href="#">
+                  <div class="cab-notify__date"> 
+                    <p>10 May 2022, 11:21</p>
+                    <p class="black">System</p>
+                  </div>
+                  <h3>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                <div class="cab-notify__empty">У вас <span>0 </span>новых уведомлений</div>
+              </div>
+            </div><a class="m-btn" href="#">View all notifications</a>
+          </div>
+        </div>
+        <div class="cab-submenu">
+          <div class="nicescroll-box"> 
+            <div class="wrap"> <a class="cab-submenu__item" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#user-2"></use>
+                  </svg>
+                </div>
+                <p>Профиль</p></a><a class="cab-submenu__item soon" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#check-2"></use>
+                  </svg>
+                </div>
+                <p>Верификация<span>soon</span></p></a><a class="cab-submenu__item" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#shield"></use>
+                  </svg>
+                </div>
+                <p>Безопасность</p>
+                <div class="cab-submenu__check active">Disabled 2FA</div></a>
+              <div class="cab-submenu__drop" id="drop-menu">
+                <div class="cab-submenu__drop-item">
+                  <div class="cab-submenu__item">
+                    <div class="cab-submenu__icon"> 
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#cab-menu-2"></use>
+                      </svg>
+                    </div>
+                    <p>Финансы</p>
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#icon-in"></use>
+                        </svg>
+                      </div>
+                      <p>Пополнить Баланс</p></a><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#icon-out"></use>
+                        </svg>
+                      </div>
+                      <p>Вывести Средства</p></a></div>
+                </div>
+                <div class="cab-submenu__drop-item">
+                  <div class="cab-submenu__item">
+                    <div class="cab-submenu__icon"> 
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#cab-menu-3"></use>
+                      </svg>
+                    </div>
+                    <p>Депозиты</p>
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#open-dep"></use>
+                        </svg>
+                      </div>
+                      <p>Открыть Депозит</p></a><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#my-dep"></use>
+                        </svg>
+                      </div>
+                      <p>Мои Депозиты</p></a></div>
+                </div>
+              </div><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
+                  </svg>
+                </div>
+                <p>Тикеты</p>
+                <div class="cab-submenu__count">2</div></a><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-11"></use>
+                  </svg>
+                </div>
+                <p>Выход</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="cab-modal">
+          <div class="cab-modal__wrap cab-modal__wrap_bal">
+            <div class="cab-modal__close"> 
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#close-2"></use>
+              </svg>
+            </div>
+            <div class="cab-bal-stat">
+              <div class="cab-bal-stat__item">
+                <h3>Replenished</h3>
+                <div class="cab-table__val">
+                  <h3> <b>43572.12345678 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                  <p class="green"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+1 920.03 вчера
+                  </p>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Invested</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Withdrawn</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Profit Received</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Referral Commission</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                  <p> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+43572.1234567 вчера
+                  </p>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Career Bonuses</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd </div>
+                  </h3>
+                  <p class="green"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+1 920.03 вчера
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cab-modal cab-modal_rank-his">
+          <div class="cab-modal__wrap">
+            <div class="cab-modal__close"> 
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#close-2"></use>
+              </svg>
+            </div>
+            <div class="cab-modal__title">История получения рангов</div>
+            <div class="cab-modal__text">
+              <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin in congue habitasse molestie vulputate a tortor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cab-side"> 
+          <div class="cab-burger">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#burger"></use>
+            </svg>
+          </div>
+          <div class="nicescroll-box">
+            <div class="wrap"> 
+              <div class="cab-menu"> <a class="cab-menu__item active" href="./cab-account.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-1"></use>
+                    </svg>
+                  </div>
+                  <p>Мой счет </p></a><a class="cab-menu__item" href="./cab-invest.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-2"></use>
+                    </svg>
+                  </div>
+                  <p>Финансы</p></a><a class="cab-menu__item" href="./cab-open.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-3"></use>
+                    </svg>
+                  </div>
+                  <p>Депозиты</p></a><a class="cab-menu__item" href="./cab-his.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-4"></use>
+                    </svg>
+                  </div>
+                  <p>История</p></a><a class="cab-menu__item" href="./cab-refs.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-5"></use>
+                    </svg>
+                  </div>
+                  <p>Реферальная Программа</p></a><a class="cab-menu__item" href="./cab-trading.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-6"></use>
+                    </svg>
+                  </div>
+                  <p>Трейдинг<span>Live</span></p></a><a class="cab-menu__item" href="./cab-support.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
+                    </svg><span>25</span>
+                  </div>
+                  <p>Поддержка</p></a><a class="cab-menu__item" href="./cab-set-1.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
+                    </svg>
+                  </div>
+                  <p>Настройки</p></a><a class="cab-menu__item" href="./cab-notify.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
+                    </svg>
+                  </div>
+                  <p>Уведомления</p></a><a class="cab-menu__item" href="./cab-msg.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-10"></use>
+                    </svg>
+                  </div>
+                  <p>Message</p></a></div><a class="cab-logout" href="#">
+                <div class="cab-menu__icon">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-11"></use>
+                  </svg>
+                </div>
+                <p>Выйти</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="cab-header">
+          <div class="container-fluid"> 
+            <div class="row">
+              <div class="col-xl-8 col-md-6 d-flex justify-content-between align-items-center"><a class="cab-logo" href="./cab-account.html"><img src="assets/img/logo-dark.svg"/></a>
+                <div class="cab-refs">
+                  <div class="cab-refs__link">
+                    <div class="cab-refs__link-icon"><img src="assets/img/cab-refs-link.svg"/>
+                    </div>
+                    <h3>Referral Link</h3>
+                    <p id="refs-link">https://ovaxglobal.com/ref?1213133</p>
+                  </div>
+                  <div class="cab-refs__qr"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#qr"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-refs__copy copy-text" data-clipboard-target="#refs-link">Copy link
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#copy"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="cab-nav"> 
+                  <div class="cab-lang"> 
+                    <div class="cab-lang__btn">
+                      <svg>
+                        <use xlink:href="assets/img/flags.svg#us"></use>
+                      </svg>
+                    </div>
+                    <div class="cab-lang__hide"><a class="active" href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a><a href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a><a href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                  <div class="cab-msg"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-10"></use>
+                    </svg>
+                  </div><a class="cab-notify" href="#"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
+                    </svg><span>2</span></a>
+                  <div class="cab-set-btn"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-hero">
+                    <div class="cab-hero__btn"> 
+                      <div class="cab-hero__img"> <img src="assets/img/cab-hero.png"/>
+                      </div>
+                      <p>Irene Parker</p>
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid"> 
+          <div class="cab-content">
+            <div class="cab-bread"> <a href="#">
+                <div class="cab-bread__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#home"></use>
+                  </svg>
+                </div>Главная</a><a href="#">Мой счет</a></div>
+            <div class="cab-content__head row d-flex align-items-center flex-wrap">
+              <div class="col-auto">
+                <div class="m-title"><strong>Настройки<span>.</span></strong></div>
+              </div>
+            </div>
+            <div class="cab-page-menu"><a class="cab-page-menu__item" href="./cab-set-1.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-9.svg"/>
+                </div>
+                <h3>Information</h3>
+                <p>Profile, contacts, notifications</p></a><a class="cab-page-menu__item active" href="./cab-set-2.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-10.svg"/>
+                </div>
+                <h3>Security</h3>
+                <p>Password, 2FA</p></a><a class="cab-page-menu__item" href="./cab-set-3.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-11.svg"/>
+                </div>
+                <h3>Finance</h3>
+                <p>Payment details</p></a></div>
+            <div class="cab-set cab-set_cur">
+              <div class="cab-set__row">
+                <div class="row d-flex align-items-center justify-content-between flex-wrap"> 
+                  <div class="col-sm-auto">
+                    <div class="cab-title">Кошельки </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <form class="cab-search cab-search_big">
+                      <button class="cab-search__btn"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#search"></use>
+                        </svg>
+                      </button>
+                      <input type="text" placeholder="Search wallet">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="cab-set__row"> 
+                <div class="cab-set__cur"> <img src="assets/img/usdt-2.svg"/>Tether (USDT)
+                </div>
+                <div class="row"> 
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">USDT TRC20 (Tron)</div>
+                    <label class="cab-input cab-input_set">
+                      <input type="text" placeholder="Введите свой USDT кошелек в сети TRC20">
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">USDT ERC20 (Ethereum)</div>
+                    <label class="cab-input cab-input_set">
+                      <input type="text" placeholder="Введите свой USDT кошелек в сети ERC20">
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">USDT BEP20 (Binance Smart Chain)</div>
+                    <label class="cab-input cab-input_set">
+                      <input type="text" placeholder="Введите свой USDT кошелек в сети BEP20 (BSC)">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="cab-set__row"> 
+                <div class="cab-set__cur"> <img src="assets/img/btc-2.svg"/>Bitcoin (BTC)
+                </div>
+                <div class="row"> 
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">Bitcoin (BTC)</div>
+                    <label class="cab-input cab-input_set">
+                      <input type="text" placeholder="Введите свой BTC кошелек">
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">Bitcoin BEP20 (Binance Smart Chain)</div>
+                    <label class="cab-input cab-input_set">
+                      <input type="text" placeholder="Введите свой BTC кошелек в сети BEP20">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="cab-set__pass cab-set__pass_row"> 
+                <div class="row d-flex align-items-end"> 
+                  <div class="col-lg-4">
+                    <div class="cab-input__title">Введите Финансовый Пароль</div>
+                    <label class="cab-input cab-input_set cab-input_icon">
+                      <input type="text" placeholder="* * * * * *"><img src="assets/img/cab-set-icon-5.svg"/>
+                    </label>
+                  </div>
+                  <div class="col-lg-auto">
+                    <button class="m-btn m-btn_full m-btn_icon"> <img src="assets/img/circle-arrow.svg"/>Update payment details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1279,6 +1279,28 @@
       }
     }
   });
+  var cabPromo = new Swiper('.cab-promo__slider .swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: '.cab-promo__nav .swiper-button-next',
+      prevEl: '.cab-promo__nav .swiper-button-prev',
+    },
+    speed: 300,
+    breakpoints: {
+      1199: {
+        slidesPerView: 3,
+      },
+      767: {
+        slidesPerView: 2,
+      }
+    }
+  });
 
   $('.footer-lang').click(function () {
     $(this).toggleClass('open');

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/app.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="copy-success">
+      <svg>
+        <use xlink:href="assets/img/sprite.svg#check"></use>
+      </svg>
+    </div>
+    <div class="wrapper">
+      <div class="cab"> 
+        <div class="cab-notify__modal"> 
+          <div class="cab-notify__head">
+            <h3>Уведомления</h3>
+            <div class="cab-notify__link"> <img src="assets/img/check.svg"/>Mark all as read
+            </div>
+            <div class="cab-notify__sound active">
+              <div class="cab-notify__sound-on">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#sound"></use>
+                </svg>
+              </div>
+              <div class="cab-notify__sound-off">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#sound-off"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="cab-notify__content"> 
+            <div class="nicescroll-box"> 
+              <div class="wrap">  <a class="cab-notify__item" href="#">
+                  <div class="cab-notify__date"> 
+                    <p>10 May 2022, 11:21</p>
+                    <p class="yellow">Ticket</p>
+                  </div>
+                  <h3>Lorem ipsum dolor sit amet consectetur. Tellus lorem viverra urna praisl interdum.</h3></a><a class="cab-notify__item" href="#">
+                  <div class="cab-notify__date"> 
+                    <p>10 May 2022, 11:21</p>
+                    <p class="black">System</p>
+                  </div>
+                  <h3>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                <div class="cab-notify__empty">У вас <span>0 </span>новых уведомлений</div>
+              </div>
+            </div><a class="m-btn" href="#">View all notifications</a>
+          </div>
+        </div>
+        <div class="cab-submenu">
+          <div class="nicescroll-box"> 
+            <div class="wrap"> <a class="cab-submenu__item" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#user-2"></use>
+                  </svg>
+                </div>
+                <p>Профиль</p></a><a class="cab-submenu__item soon" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#check-2"></use>
+                  </svg>
+                </div>
+                <p>Верификация<span>soon</span></p></a><a class="cab-submenu__item" href="#"> 
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#shield"></use>
+                  </svg>
+                </div>
+                <p>Безопасность</p>
+                <div class="cab-submenu__check active">Disabled 2FA</div></a>
+              <div class="cab-submenu__drop" id="drop-menu">
+                <div class="cab-submenu__drop-item">
+                  <div class="cab-submenu__item">
+                    <div class="cab-submenu__icon"> 
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#cab-menu-2"></use>
+                      </svg>
+                    </div>
+                    <p>Финансы</p>
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#icon-in"></use>
+                        </svg>
+                      </div>
+                      <p>Пополнить Баланс</p></a><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#icon-out"></use>
+                        </svg>
+                      </div>
+                      <p>Вывести Средства</p></a></div>
+                </div>
+                <div class="cab-submenu__drop-item">
+                  <div class="cab-submenu__item">
+                    <div class="cab-submenu__icon"> 
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#cab-menu-3"></use>
+                      </svg>
+                    </div>
+                    <p>Депозиты</p>
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#open-dep"></use>
+                        </svg>
+                      </div>
+                      <p>Открыть Депозит</p></a><a class="cab-submenu__item" href="#">
+                      <div class="cab-submenu__icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#my-dep"></use>
+                        </svg>
+                      </div>
+                      <p>Мои Депозиты</p></a></div>
+                </div>
+              </div><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
+                  </svg>
+                </div>
+                <p>Тикеты</p>
+                <div class="cab-submenu__count">2</div></a><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-11"></use>
+                  </svg>
+                </div>
+                <p>Выход</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="cab-modal">
+          <div class="cab-modal__wrap cab-modal__wrap_bal">
+            <div class="cab-modal__close"> 
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#close-2"></use>
+              </svg>
+            </div>
+            <div class="cab-bal-stat">
+              <div class="cab-bal-stat__item">
+                <h3>Replenished</h3>
+                <div class="cab-table__val">
+                  <h3> <b>43572.12345678 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                  <p class="green"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+1 920.03 вчера
+                  </p>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Invested</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Withdrawn</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Profit Received</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Referral Commission</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd</div>
+                  </h3>
+                  <p> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+43572.1234567 вчера
+                  </p>
+                </div>
+              </div>
+              <div class="cab-bal-stat__item">
+                <h3>Career Bonuses</h3>
+                <div class="cab-table__val">
+                  <h3> <b>13 541.45 </b>
+                    <div class="cab-cur">usd </div>
+                  </h3>
+                  <p class="green"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                    </svg>+1 920.03 вчера
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cab-modal cab-modal_rank-his">
+          <div class="cab-modal__wrap">
+            <div class="cab-modal__close"> 
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#close-2"></use>
+              </svg>
+            </div>
+            <div class="cab-modal__title">История получения рангов</div>
+            <div class="cab-modal__text">
+              <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin in congue habitasse molestie vulputate a tortor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cab-side"> 
+          <div class="cab-burger">
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#burger"></use>
+            </svg>
+          </div>
+          <div class="nicescroll-box">
+            <div class="wrap"> 
+              <div class="cab-menu"> <a class="cab-menu__item active" href="./cab-account.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-1"></use>
+                    </svg>
+                  </div>
+                  <p>Мой счет </p></a><a class="cab-menu__item" href="./cab-invest.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-2"></use>
+                    </svg>
+                  </div>
+                  <p>Финансы</p></a><a class="cab-menu__item" href="./cab-open.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-3"></use>
+                    </svg>
+                  </div>
+                  <p>Депозиты</p></a><a class="cab-menu__item" href="./cab-his.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-4"></use>
+                    </svg>
+                  </div>
+                  <p>История</p></a><a class="cab-menu__item" href="./cab-refs.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-5"></use>
+                    </svg>
+                  </div>
+                  <p>Реферальная Программа</p></a><a class="cab-menu__item" href="./cab-trading.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-6"></use>
+                    </svg>
+                  </div>
+                  <p>Трейдинг<span>Live</span></p></a><a class="cab-menu__item" href="./cab-support.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
+                    </svg><span>25</span>
+                  </div>
+                  <p>Поддержка</p></a><a class="cab-menu__item" href="./cab-set-1.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
+                    </svg>
+                  </div>
+                  <p>Настройки</p></a><a class="cab-menu__item" href="./cab-notify.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
+                    </svg>
+                  </div>
+                  <p>Уведомления</p></a><a class="cab-menu__item" href="./cab-msg.html">
+                  <div class="cab-menu__bg"> </div>
+                  <div class="cab-menu__icon">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-10"></use>
+                    </svg>
+                  </div>
+                  <p>Message</p></a></div><a class="cab-logout" href="#">
+                <div class="cab-menu__icon">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#cab-menu-11"></use>
+                  </svg>
+                </div>
+                <p>Выйти</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="cab-header">
+          <div class="container-fluid"> 
+            <div class="row">
+              <div class="col-xl-8 col-md-6 d-flex justify-content-between align-items-center"><a class="cab-logo" href="./cab-account.html"><img src="assets/img/logo-dark.svg"/></a>
+                <div class="cab-refs">
+                  <div class="cab-refs__link">
+                    <div class="cab-refs__link-icon"><img src="assets/img/cab-refs-link.svg"/>
+                    </div>
+                    <h3>Referral Link</h3>
+                    <p id="refs-link">https://ovaxglobal.com/ref?1213133</p>
+                  </div>
+                  <div class="cab-refs__qr"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#qr"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-refs__copy copy-text" data-clipboard-target="#refs-link">Copy link
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#copy"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="cab-nav"> 
+                  <div class="cab-lang"> 
+                    <div class="cab-lang__btn">
+                      <svg>
+                        <use xlink:href="assets/img/flags.svg#us"></use>
+                      </svg>
+                    </div>
+                    <div class="cab-lang__hide"><a class="active" href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a><a href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a><a href="#"> 
+                        <div class="cab-lang__icon">
+                          <svg>
+                            <use xlink:href="assets/img/flags.svg#us"></use>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                  <div class="cab-msg"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-10"></use>
+                    </svg>
+                  </div><a class="cab-notify" href="#"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
+                    </svg><span>2</span></a>
+                  <div class="cab-set-btn"> 
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
+                    </svg>
+                  </div>
+                  <div class="cab-hero">
+                    <div class="cab-hero__btn"> 
+                      <div class="cab-hero__img"> <img src="assets/img/cab-hero.png"/>
+                      </div>
+                      <p>Irene Parker</p>
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid"> 
+          <div class="cab-content">
+            <div class="cab-bread"> <a href="#">
+                <div class="cab-bread__icon"> 
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#home"></use>
+                  </svg>
+                </div>Главная</a><a href="#">Мой счет</a></div>
+            <div class="cab-content__head row d-flex align-items-center"> 
+              <div class="col-sm col-12">
+                <div class="m-title"> <strong>Финансы<span>.</span></strong></div>
+              </div>
+            </div>
+            <div class="cab-page-menu"><a class="cab-page-menu__item" href="./cab-invest.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-1.svg"/>
+                </div>
+                <h3>Refill</h3>
+                <p>Top up the balance</p></a><a class="cab-page-menu__item active" href="./cab-withdraw.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-2.svg"/>
+                </div>
+                <h3>Withdrawal</h3>
+                <p>Withdraw funds</p></a><a class="cab-page-menu__item" href="./cab-faq.html">
+                <div class="cab-page-menu__icon"><img src="assets/img/cab-page-menu-3.svg"/>
+                </div>
+                <h3>Information</h3>
+                <p>Rules and FAQ</p></a></div>
+            <div class="cab-faq"> 
+              <div class="cab-faq__head"> 
+                <h3>FAQ</h3>
+                <p>На этой странице представлены вопросы и правила относящиеся только к пополнению баланса и выводу средств. Если в ищите ответы на другой вопрос, не имеющий отношения к вводу и выводу, пожалуйста перейдите на страницу <a href="#">FAQ </a>или если вы не нашли ответ на свой вопрос, обратитесь <a href="#">в службу поддержки</a></p>
+              </div>
+              <div class="accordion cab-faq__list"> 
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">1<span>.</span></div>
+                    <h3>Как создать аккаунт?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">2<span>.</span></div>
+                    <h3>Как внести депозит?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">3<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">4<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet consectetur?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">5<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet consectetur?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">6<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">7<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet consectetur?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">8<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet consectetur. Sit est adipiscing at ac iaculis imperdiet orci ante?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">9<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit amet consectetur?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">10<span>.</span></div>
+                    <h3>Lorem ipsum dolor sit?</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <ol>
+                        <li>
+                          <p>Lorem ipsum dolor sit amet consectetur. Risus varius fames sit sem. Tellus velit pellentesque sit arcu varius elementum neque non. Facilisis in id faucibus pulvinar sed mauris tincidunt vitae tristique. Sem integer suspendisse sed turpis enim eu. Congue cum non aliquam erat id bibendum tempor id quis. Sagittis ornare quam sit nisi sollicitudin ultricies cursus. Magna blandit phasellus euismod dui faucibus sed sem sit magnis. Diam egestas aliquam sit enim sit nisi in. <a href="#">In aenean faucibus tincidunt et in egestas. </a></p>
+                          <ul> 
+                            <li> 
+                              <p>Elit sed purus dolor ut. <i>Morbi ut pellentesque sed bibendum nunc tortor diam ac. </i>Viverra ac aliquet luctus quam porta. <b>Ullamcorper commodo posuere id sit cras nibh netus molestie. </b>Lorem proin morbi senectus faucibus pretium.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cab-faq"> 
+              <div class="cab-faq__head"> 
+                <h3>Правила</h3>
+              </div>
+              <div class="accordion cab-faq__list"> 
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">1<span>.</span></div>
+                    <h3>Регистрация и участие</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <p> <span>1.1 </span>Регистрация. Для начала участия необходима регистрация на сайте www.ovaxglobal.com или его зеркале. Один участник может иметь только одну регистрацию в системе. Наличие более одной регистрации ведет к исключению из сообщества. (см п.2.6.)</p>
+                      <p> <span>1.2 </span>Зеркала сайта. После каждой блокировки мы оперативно добавляем новый домен зеркала сайта. Чтобы участники всегда могли попадать на актуальное зеркало сайта, мы сделали специальную ссылку, рекомендуем сохранить ее в закладки. Вместо зеркал можно использовать VPN, или любой другой механизм обхода блокировок, если основной сайт и ЛК заблокированы в вашей стране. Подробнее читайте в статье Инструкция по созданию постоянной партнерской ссылки.</p>
+                      <p> <span>1.3 </span>Зеркало ЛК. Ссылка на зеркало личного кабинета (ЛК) есть в шапке сайта. Ее также стоит сохранить в закладки</p>
+                      <p> <span>1.4 </span>Возраст. Участие могут принимать только люди, достигшие совершеннолетия, т.е. с 18-ти лет.</p>
+                      <p> <span>1.5 </span>Личные кабинеты. Участник осуществляет финансовое взаимодействие с другими участниками системы исключительно посредством личных кабинетов — программного обеспечения, которое размещено на сайте системы и служит для обеспечения и учета взаимного финансирования участников. Личные данные. При регистрации необходимо указывать свои настоящие ФИО, так как перед выводом вам потребуется пройти верификацию личности. Если вы потеряете доступ к своему кабинету, то для восстановления доступа к вашему аккаунту, может потребоваться установление личности при помощи демонстрации документов во время видеоконференции с представителем проекта. Ваша фамилия, а при желании и контактные данные, будут скрыты от других участников, вместо этого они будут видеть только ваши имя и псевдоним. Телефон. При регистрации необходимо указать правильный номер мобильного телефона и электронную почту. Участник должен быть доступен по указанному при регистрации номеру телефона для общения с представителем. Это ключевые условия участия. Сообщество открыто для всех, кто согласен с этим правилом. Верификация личности. Верификация личности необходима для повышения безопасности проекта и вашего участия, чтобы мы могли убедиться, что вы — это именно вы, а не мошенник или хакер, который завладел вашим аккаунтом или создал его в целях мошенничества. Верификация обязательна для всех новых участников, ее нужно пройти для того чтобы вам был разрешен вывод средств. Подробная информация о том, как проходить процедуру верификации, описана в инструкции “Верификация личности”.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">2<span>.</span></div>
+                    <h3>Связь с сотрудниками</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <p> <span>1.1 </span>Регистрация. Для начала участия необходима регистрация на сайте www.ovaxglobal.com или его зеркале. Один участник может иметь только одну регистрацию в системе. Наличие более одной регистрации ведет к исключению из сообщества. (см п.2.6.)</p>
+                      <p> <span>1.2 </span>Зеркала сайта. После каждой блокировки мы оперативно добавляем новый домен зеркала сайта. Чтобы участники всегда могли попадать на актуальное зеркало сайта, мы сделали специальную ссылку, рекомендуем сохранить ее в закладки. Вместо зеркал можно использовать VPN, или любой другой механизм обхода блокировок, если основной сайт и ЛК заблокированы в вашей стране. Подробнее читайте в статье Инструкция по созданию постоянной партнерской ссылки.</p>
+                      <p> <span>1.3 </span>Зеркало ЛК. Ссылка на зеркало личного кабинета (ЛК) есть в шапке сайта. Ее также стоит сохранить в закладки</p>
+                      <p> <span>1.4 </span>Возраст. Участие могут принимать только люди, достигшие совершеннолетия, т.е. с 18-ти лет.</p>
+                      <p> <span>1.5 </span>Личные кабинеты. Участник осуществляет финансовое взаимодействие с другими участниками системы исключительно посредством личных кабинетов — программного обеспечения, которое размещено на сайте системы и служит для обеспечения и учета взаимного финансирования участников. Личные данные. При регистрации необходимо указывать свои настоящие ФИО, так как перед выводом вам потребуется пройти верификацию личности. Если вы потеряете доступ к своему кабинету, то для восстановления доступа к вашему аккаунту, может потребоваться установление личности при помощи демонстрации документов во время видеоконференции с представителем проекта. Ваша фамилия, а при желании и контактные данные, будут скрыты от других участников, вместо этого они будут видеть только ваши имя и псевдоним. Телефон. При регистрации необходимо указать правильный номер мобильного телефона и электронную почту. Участник должен быть доступен по указанному при регистрации номеру телефона для общения с представителем. Это ключевые условия участия. Сообщество открыто для всех, кто согласен с этим правилом. Верификация личности. Верификация личности необходима для повышения безопасности проекта и вашего участия, чтобы мы могли убедиться, что вы — это именно вы, а не мошенник или хакер, который завладел вашим аккаунтом или создал его в целях мошенничества. Верификация обязательна для всех новых участников, ее нужно пройти для того чтобы вам был разрешен вывод средств. Подробная информация о том, как проходить процедуру верификации, описана в инструкции “Верификация личности”.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion__item cab-faq__item">
+                  <div class="accordion__head cab-faq__item-head">
+                    <div class="cab-faq__item-num">3<span>.</span></div>
+                    <h3>Учет</h3>
+                  </div>
+                  <div class="accordion__body cab-faq__item-body"> 
+                    <div class="cab-faq__text"> 
+                      <p> <span>1.1 </span>Регистрация. Для начала участия необходима регистрация на сайте www.ovaxglobal.com или его зеркале. Один участник может иметь только одну регистрацию в системе. Наличие более одной регистрации ведет к исключению из сообщества. (см п.2.6.)</p>
+                      <p> <span>1.2 </span>Зеркала сайта. После каждой блокировки мы оперативно добавляем новый домен зеркала сайта. Чтобы участники всегда могли попадать на актуальное зеркало сайта, мы сделали специальную ссылку, рекомендуем сохранить ее в закладки. Вместо зеркал можно использовать VPN, или любой другой механизм обхода блокировок, если основной сайт и ЛК заблокированы в вашей стране. Подробнее читайте в статье Инструкция по созданию постоянной партнерской ссылки.</p>
+                      <p> <span>1.3 </span>Зеркало ЛК. Ссылка на зеркало личного кабинета (ЛК) есть в шапке сайта. Ее также стоит сохранить в закладки</p>
+                      <p> <span>1.4 </span>Возраст. Участие могут принимать только люди, достигшие совершеннолетия, т.е. с 18-ти лет.</p>
+                      <p> <span>1.5 </span>Личные кабинеты. Участник осуществляет финансовое взаимодействие с другими участниками системы исключительно посредством личных кабинетов — программного обеспечения, которое размещено на сайте системы и служит для обеспечения и учета взаимного финансирования участников. Личные данные. При регистрации необходимо указывать свои настоящие ФИО, так как перед выводом вам потребуется пройти верификацию личности. Если вы потеряете доступ к своему кабинету, то для восстановления доступа к вашему аккаунту, может потребоваться установление личности при помощи демонстрации документов во время видеоконференции с представителем проекта. Ваша фамилия, а при желании и контактные данные, будут скрыты от других участников, вместо этого они будут видеть только ваши имя и псевдоним. Телефон. При регистрации необходимо указать правильный номер мобильного телефона и электронную почту. Участник должен быть доступен по указанному при регистрации номеру телефона для общения с представителем. Это ключевые условия участия. Сообщество открыто для всех, кто согласен с этим правилом. Верификация личности. Верификация личности необходима для повышения безопасности проекта и вашего участия, чтобы мы могли убедиться, что вы — это именно вы, а не мошенник или хакер, который завладел вашим аккаунтом или создал его в целях мошенничества. Верификация обязательна для всех новых участников, ее нужно пройти для того чтобы вам был разрешен вывод средств. Подробная информация о том, как проходить процедуру верификации, описана в инструкции “Верификация личности”.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
