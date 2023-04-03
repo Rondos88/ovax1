@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   //menu fix mobile
@@ -12,67 +12,67 @@
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
-  
+
   // poppup
 
   $('.popup-frame').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false
-	});
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
 
-	$('.popup-img').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		mainClass: 'mfp-img-mobile',
-		image: {
-			verticalFit: true
-		}
-		
+  $('.popup-img').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+
   });
 
   $('.popup').magnificPopup({
-		type: 'inline',
+    type: 'inline',
     preloader: false,
     closeOnContentClick: false,
     fixedContentPos: true,
     mainClass: 'mfp-zoom-in',
 
     callbacks: {
-      open: function() {
+      open: function () {
 
       },
     }
   });
 
-  $('.mfp-close').on('click', function(){
+  $('.mfp-close').on('click', function () {
     $.magnificPopup.close();
   })
 
   svg4everybody();
-  
+
 
   //table
-  
-  if($('table.responsive').length){
+
+  if ($('table.responsive').length) {
     $('table.responsive').ngResponsiveTables();
   }
-	
+
   //select styler
 
   var changeSelectInitText = item => {
     let text = item.find('li.selected').data('text');
     let selectText = item.find('.jq-selectbox__select-text');
     let liText = item.find('.jq-selectbox__dropdown li');
-    let finalText = item.find('li.selected').text().replace(text, '') + ' <span>' + text  + '</span>';
+    let finalText = item.find('li.selected').text().replace(text, '') + ' <span>' + text + '</span>';
 
-    if(text !== undefined && selectText.html().replace(' ', '') !== finalText.replace(' ', '')){
+    if (text !== undefined && selectText.html().replace(' ', '') !== finalText.replace(' ', '')) {
       selectText.html(finalText);
 
-      liText.each(function(){
+      liText.each(function () {
         $(this).html($(this).text() + ' <span>' + $(this).data('text') + '</span>')
       })
     }
@@ -80,41 +80,43 @@
   var changeSelectClosedText = item => {
     let text = item.find('li.selected').data('text');
     let selectText = item.find('.jq-selectbox__select-text');
-    let finalText = item.find('li.selected').text().replace(text, '') + ' <span>' + text  + '</span>';
-    
-    if(text !== undefined && selectText.html().replace(' ', '') !== finalText.replace(' ', '')){
+    let finalText = item.find('li.selected').text().replace(text, '') + ' <span>' + text + '</span>';
+
+    if (text !== undefined && selectText.html().replace(' ', '') !== finalText.replace(' ', '')) {
       selectText.html(finalText);
     }
   }
 
   $('select').not('.sel-search').styler({
-    onFormStyled: function(){
-      $('.jq-selectbox.sel-text').each(function(){
+    onFormStyled: function () {
+      $('.jq-selectbox.sel-text').each(function () {
         changeSelectInitText($(this));
       })
     },
-    onSelectClosed: function(){
+    onSelectClosed: function () {
       changeSelectClosedText($(this));
     },
   });
 
   $('select.sel-search').styler({
     selectSearch: true,
-    onFormStyled: function(){
-      $('.jq-selectbox.sel-search.sel-text').each(function(){
+    onFormStyled: function () {
+      $('.jq-selectbox.sel-search.sel-text').each(function () {
         changeSelectInitText($(this));
       })
     },
-    onSelectClosed: function(){
+    onSelectClosed: function () {
       changeSelectClosedText($(this));
     },
   });
 
   //datepicker
 
-  $( "#date" ).datepicker({
+  $(".datepicker-trigger").datepicker({
     range: true,
-    multipleDatesSeparator: ' - '
+    multipleDatesSeparator: ' - ',
+    isMobile: true,
+    autoClose: true,
   });
 
   // $("#weeklyDatePicker").datetimepicker({
@@ -128,8 +130,8 @@
   //     var lastDate =  moment(value, "DD-MM-YYYY").day(6).format("DD-MM-YYYY");
   //     $("#weeklyDatePicker").val(firstDate + " - " + lastDate);
   // });
-   
-  if($('#tel').length){
+
+  if ($('#tel').length) {
     const inputTel = document.querySelector("#tel");
     intlTelInput(inputTel, {
       utilsScript: "node_modules/intl-tel-input/build/js/utils.js?22",
@@ -137,26 +139,26 @@
   }
 
   //tabs
-  $('[data-tabs-btn]').on('click', function() {
+  $('[data-tabs-btn]').on('click', function () {
     let tabsName = $(this).parent().attr('data-tabs-btns');
     let tabNo = $(this).attr('data-tabs-btn');
-    let tabsWrapper = $('[data-tabs-wrapper='+tabsName+']');
-    
+    let tabsWrapper = $('[data-tabs-wrapper=' + tabsName + ']');
+
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
 
-    tabsWrapper.children().each(function(i, item) {
+    tabsWrapper.children().each(function (i, item) {
       $(item).hide();
       if ($(item).attr('data-tabs-item') === tabNo) {
         $(item).show();
       }
-      if($('.nicescroll-box').length !== 0){
+      if ($('.nicescroll-box').length !== 0) {
         setTimeout(() => {
           $(".nicescroll-box").getNiceScroll().resize();
         }, 1000);
       }
 
-      if($('.cab-table__wrap').length){
+      if ($('.cab-table__wrap').length) {
         setTimeout(tableSticky(), 1000);
       }
     });
@@ -166,13 +168,13 @@
     let btns = $('[data-tabs-btns]');
     let wrapper = $('[data-tabs-wrapper]');
 
-    $(wrapper).children().not(function() {
+    $(wrapper).children().not(function () {
       if ($(this).attr('data-tabs-item') === '1') {
         return true;
       }
     }).hide();
 
-    $(btns).children().not(function() {
+    $(btns).children().not(function () {
       if ($(this).attr('data-tabs-btn') === '1') {
         return false;
       } else {
@@ -180,30 +182,30 @@
       }
     }).addClass('active');
   }
-  
+
   tabsInitialization();
 
   //accordion
 
-  var Accordion = function(el, multiple) {
+  var Accordion = function (el, multiple) {
     this.el = el || {};
     this.multiple = multiple || false;
 
     // Variables privadas
     var links = this.el.find('.accordion__head');
     // Evento
-    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+    links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
   }
 
-  Accordion.prototype.dropdown = function(e) {
+  Accordion.prototype.dropdown = function (e) {
     var $el = e.data.el,
-        $this = $(this),
-        $next = $this.next();
+      $this = $(this),
+      $next = $this.next();
 
     $next.slideToggle();
     $this.parent().toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 1000);
@@ -212,15 +214,15 @@
     if (!e.data.multiple) {
       $el.find('.accordion__body').not($next).slideUp().parent().removeClass('active');
     };
-  }	
+  }
 
   var accordion = new Accordion($('.accordion'), false);
-  
+
   //nicescroll
 
-  $(".nicescroll-box").niceScroll(".wrap",{
-    cursorcolor:"#F12A23",
-    cursorwidth:"3px",
+  $(".nicescroll-box").niceScroll(".wrap", {
+    cursorcolor: "#F12A23",
+    cursorwidth: "3px",
     cursorborder: "0px solid #fff",
     zindex: 20,
     emulatetouch: true,
@@ -228,8 +230,8 @@
     cursorborderradius: "10px",
     railalign: 'right',
   });
-  
-  
+
+
   // aos
 
   AOS.init(
@@ -252,8 +254,8 @@
   );
 
   setTimeout(AOS.refreshHard, 1000);
-	
-	//clipboard
+
+  //clipboard
 
   var affil = new Clipboard('.copy-text');
 
@@ -269,13 +271,13 @@
 
   // home charts
 
-  if($('.number-list').length !== 0){
+  if ($('.number-list').length !== 0) {
     let isScroll = false;
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
 
       if ($(this).scrollTop() + $(window).height() >= $('.number-list').offset().top + 50 && !isScroll) {
         isScroll = true;
-        $('.number-chart__line').each(function(){
+        $('.number-chart__line').each(function () {
           $(this).animate({
             width: '100%'
           }, 2000);
@@ -290,7 +292,7 @@
     });
   }
 
-  if($('.tip-trigger').length){
+  if ($('.tip-trigger').length) {
     let tooltips = document.querySelectorAll('.tip-trigger');
     tooltips.forEach(item => {
       let temp = item.querySelector('.tip-wrap')
@@ -306,7 +308,7 @@
   // home charts end
 
   // numbers
-  if($('.dynamicNumber').length !== 0){
+  if ($('.dynamicNumber').length !== 0) {
     let isScroll = false;
 
     $('.dynamicNumber').dynamicNumber({
@@ -318,32 +320,32 @@
         separator: ' ',
         decimalsPoint: '.'
       },
-    }); 
+    });
 
-    $(window).on('scroll', function(){
+    $(window).on('scroll', function () {
       var scrolltop = $(this).scrollTop();
-      $('.dynamicNumber').each(function(){
-        if(scrolltop + $(window).height() >= $(this).offset().top + 50) {
+      $('.dynamicNumber').each(function () {
+        if (scrolltop + $(window).height() >= $(this).offset().top + 50) {
           $(this).dynamicNumber('start');
           isScroll = true;
         }
       });
 
-      
+
     });
   }
   // numbers end
 
-  if($('.svg-animate').length){
+  if ($('.svg-animate').length) {
     let isScroll = false;
-    $(window).on('scroll', function(){
+    $(window).on('scroll', function () {
       let scrolltop = $(this).scrollTop();
 
-      $('.svg-animate').each(function(){
-        if(scrolltop + $(window).height() >= $(this).offset().top + 50) {
+      $('.svg-animate').each(function () {
+        if (scrolltop + $(window).height() >= $(this).offset().top + 50) {
           $(this).find('svg').addClass('animate')
           isScroll = true;
-        }else{
+        } else {
           $(this).find('svg').removeClass('animate')
           isScroll = false;
         }
@@ -351,16 +353,16 @@
     });
   }
 
-  if($('#road-map').length){
+  if ($('#road-map').length) {
     let isScroll = false;
-    $(window).on('scroll', function(){
+    $(window).on('scroll', function () {
       let scrolltop = $(this).scrollTop();
 
-      $('.road-map').each(function(){
-        if(scrolltop + $(window).height() >= $(this).offset().top + 50) {
+      $('.road-map').each(function () {
+        if (scrolltop + $(window).height() >= $(this).offset().top + 50) {
           $(this).addClass('animate')
           isScroll = true;
-        }else{
+        } else {
           $(this).removeClass('animate')
           isScroll = false;
         }
@@ -368,9 +370,7 @@
     });
   }
 
-  
-
-  if($('#text-1').length){
+  if ($('#text-1').length) {
     const typeText = new TypeIt("#text-1", {
       speed: 50,
       startDelay: 0,
@@ -388,109 +388,107 @@
 
   //parallax
 
-  if($('#call-scene').length !== 0){
+  if ($('#call-scene').length !== 0) {
     let scene = document.getElementById('call-scene');
     let parallaxInstance = new Parallax(scene, {
       limitX: 1,
     });
   }
-  if($('#perk-scene').length !== 0){
+  if ($('#perk-scene').length !== 0) {
     let scene = document.getElementById('perk-scene');
     let parallaxInstance = new Parallax(scene, {
       limitY: 1,
     });
   }
 
-  if($('.header-bot').length){
+  if ($('.header-bot').length) {
     // stickyNav
 
     var stickyNavTop = $('.header-bot').offset().top;
-            
-    var stickyNav = function(){
-      var scrollTop = $(window).scrollTop(); 
-      
-      if (scrollTop > stickyNavTop) { 
+
+    var stickyNav = function () {
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop > stickyNavTop) {
         $('.header-bot').addClass('fixed');
         $('.header-content').addClass('fixed');
         $('.m-nav').addClass('fixed');
       } else {
-        $('.header-bot').removeClass('fixed'); 
-        $('.header-content').removeClass('fixed'); 
-        $('.m-nav').removeClass('fixed'); 
+        $('.header-bot').removeClass('fixed');
+        $('.header-content').removeClass('fixed');
+        $('.m-nav').removeClass('fixed');
       }
     };
 
     stickyNav();
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
       stickyNav();
     });
   }
 
-  
-
   // Toggle Mob menu
 
-  $('.m-nav .header-menu__item').on('click', function(){
+  $('.m-nav .header-menu__item').on('click', function () {
     let toggleMenu = $(this).find('.header-menu__in');
     toggleMenu.slideToggle();
     $(this).siblings('.header-menu__item').find('.header-menu__in').slideUp();
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
     }
   })
 
-  
+
 
   // Main Sidebar 
-  
-  $('.header-burger').on('click', function(){
+
+  $('.header-burger').on('click', function () {
     $(this).toggleClass('active');
     $('.m-nav').toggleClass('active');
-    
-    if($('.nicescroll-box').length !== 0){
+
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
     }
   })
 
-  $(document).on('mouseup', function (e){ 
+  $(document).on('mouseup', function (e) {
     let btn = $('.header-burger');
     let modal = $('.m-nav');
 
     if (!btn.is(e.target) && btn.has(e.target).length === 0 &&
-        !modal.is(e.target) && modal.has(e.target).length === 0) { 
+      !modal.is(e.target) && modal.has(e.target).length === 0) {
       btn.removeClass('active');
       modal.removeClass('active');
     }
   });
 
-  const handle = $( "#calc-sum" );
-  $( "#calc-slider" ).slider({
+  const handle = $("#calc-sum");
+  $("#calc-slider").slider({
     range: 'min',
     min: 0,
     max: 1500,
     step: 1,
     value: 500,
-    create: function() {
-      handle.val( $( this ).slider( "value" ) );
+    create: function () {
+      handle.val($(this).slider("value"));
     },
-    slide: function( event, ui ) {
-      handle.val( ui.value );
+    slide: function (event, ui) {
+      handle.val(ui.value);
     }
   });
 
-  $( "#calc-sum" ).on( "keydown", function() {
+  $("#calc-sum").on("keydown", function () {
     $('#calc-slider').slider("value", $(this).val());
   });
 
   //pass show/hide
 
-  $('.m-input__show').on('click', function(){
+  $('.m-input__show').on('click', function () {
     let input = $(this).parent().find('input');
     $(this).toggleClass('active');
 
@@ -499,41 +497,41 @@
 
   //table mousemove 
 
-  
+
   const tableSticky = () => {
     const tableWrap = $('.cab-table__wrap');
-    tableWrap.each(function(){
+    tableWrap.each(function () {
       let table = $(this).find('table');
 
       $(this).width() < table.width() ? table.addClass('sticky') : table.removeClass('sticky');
     })
 
-    $(window).on('resize', function(){
-      tableWrap.each(function(){
+    $(window).on('resize', function () {
+      tableWrap.each(function () {
         let table = $(this).find('table');
-  
+
         $(this).width() < table.width() ? table.addClass('sticky') : table.removeClass('sticky');
       })
     })
   }
 
-  if($('.cab-table__wrap').length){
+  if ($('.cab-table__wrap').length) {
     tableSticky();
   }
 
-  if($('.cab-refs-lvls__progress').length){
+  if ($('.cab-refs-lvls__progress').length) {
     const progItems = document.querySelectorAll(".cab-refs-lvls__progress");
     progItems.forEach(item => {
-      let totalLength = (item.offsetWidth * 2) + (item.offsetHeight * 2); 
-    
+      let totalLength = (item.offsetWidth * 2) + (item.offsetHeight * 2);
+
       let progressVal = item.dataset.percent;
       let backgroundPos;
       let input = (progressVal > 100) ? 100 : progressVal;
       let borderLen = (input / 100) * totalLength;
-      
+
       if (borderLen <= item.offsetWidth) {
         backgroundPos = `background-position: ` + (-item.offsetWidth + borderLen) + `px 0px, ${item.offsetWidth - 8}px -${item.offsetHeight}px, ${item.offsetWidth}px ${item.offsetHeight - 8}px, 0px ${item.offsetHeight}px`;
-        
+
         item.setAttribute('style', backgroundPos);
       } else if (borderLen <= (item.offsetWidth + item.offsetHeight)) {
         backgroundPos = `background-position: 0px 0px, ${item.offsetWidth - 8}px ` + (-item.offsetHeight + (borderLen - item.offsetHeight)) + `px, ${item.offsetWidth}px ${item.offsetHeight - 8}px, 0px ${item.offsetHeight}px`;
@@ -551,9 +549,9 @@
   }
 
   // career links
-  function scrollT(){
-    if($(window).width() <= 991){
-      $('.career-rank-tabs__btn').on('click', function() {
+  function scrollT() {
+    if ($(window).width() <= 991) {
+      $('.career-rank-tabs__btn').on('click', function () {
         var $element = $(this);
         var position = $element.position().left;
         $(".career-rank-tabs__wrap .nicescroll-box").getNiceScroll(0).doScrollLeft(position, '1000');
@@ -567,22 +565,22 @@
   // });
 
 
- //  $('.career-rank-tabs__btn').on('click', function(){
- //    let from = $(this).attr('data-tabs-btn');
- //    let to = $('.career-rank-item');
- //
- //    to.each(function(){
- //      let th = $(this);
- //
- //      if($(window).width() <= 991 && th.attr('data-tabs-item') === from){
- //        $('html').animate({scrollTop: th.offset().top - 120}, 1000);
- //        return false;
- //      }
- //    })
- // });
+  //  $('.career-rank-tabs__btn').on('click', function(){
+  //    let from = $(this).attr('data-tabs-btn');
+  //    let to = $('.career-rank-item');
+  //
+  //    to.each(function(){
+  //      let th = $(this);
+  //
+  //      if($(window).width() <= 991 && th.attr('data-tabs-item') === from){
+  //        $('html').animate({scrollTop: th.offset().top - 120}, 1000);
+  //        return false;
+  //      }
+  //    })
+  // });
   // inputs pin
 
-  $('#inputs-code input').on('input', function(e) {
+  $('#inputs-code input').on('input', function (e) {
     var input = $(this);
     var value = input.val().replace(/\D/g, '');
     input.val(value);
@@ -592,55 +590,55 @@
     }
   });
 
-  $('.header-lang__btn').on('click', function(){
+  $('.header-lang__btn').on('click', function () {
     let toggleItem = $('.header-lang__hide');
 
     $(this).parents('.header-lang').toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
     }
 
-    if(toggleItem.length){
+    if (toggleItem.length) {
       toggleItem.toggleClass('active');
     }
   })
 
-  $(document).on('mouseup', function (e){ 
+  $(document).on('mouseup', function (e) {
     let btn = $('.header-lang__btn');
     let modal = $('.header-lang__hide');
 
     if (!btn.is(e.target) && btn.has(e.target).length === 0 &&
-        !modal.is(e.target) && modal.has(e.target).length === 0) { 
+      !modal.is(e.target) && modal.has(e.target).length === 0) {
       btn.parents('.header-lang').removeClass('active');
       modal.removeClass('active');
     }
   });
 
-  if($('.invest-table').length){
-    $('.invest-table__side .invest-table__row .invest-table__title>span').each(function(i){
-        let text = $(this).text();
-        $('.invest-table__list .invest-table__item').each(function(){
-            if($(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+') .invest-table__check_red').length){
-                $(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+')').prepend('<div class="title title_gray">'+text+'</div>');
-            }else{
-                $(this).find('.invest-table__content .invest-table__row:nth-child('+(i+1)+')').prepend('<div class="title">'+text+'</div>');
-            }
-        
-        });
+  if ($('.invest-table').length) {
+    $('.invest-table__side .invest-table__row .invest-table__title>span').each(function (i) {
+      let text = $(this).text();
+      $('.invest-table__list .invest-table__item').each(function () {
+        if ($(this).find('.invest-table__content .invest-table__row:nth-child(' + (i + 1) + ') .invest-table__check_red').length) {
+          $(this).find('.invest-table__content .invest-table__row:nth-child(' + (i + 1) + ')').prepend('<div class="title title_gray">' + text + '</div>');
+        } else {
+          $(this).find('.invest-table__content .invest-table__row:nth-child(' + (i + 1) + ')').prepend('<div class="title">' + text + '</div>');
+        }
+
+      });
     });
   }
-  
+
   // cabinet js
 
-  $('.cab-burger').on('click', function(){
+  $('.cab-burger').on('click', function () {
 
     $(this).siblings('.nicescroll-box').delay(100).slideToggle(200);
     $(this).parents('.cab-side').toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
@@ -648,61 +646,61 @@
 
   })
 
-  $('.cab-notify').on('click', function(){
+  $('.cab-notify').on('click', function () {
     let toggleItem = $('.cab-notify__modal');
 
     $(this).toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
     }
 
-    if(toggleItem.length){
+    if (toggleItem.length) {
       toggleItem.toggleClass('active');
     }
   })
 
   var closeModal = (btn, modal, e) => {
     if (!btn.is(e.target) && btn.has(e.target).length === 0 &&
-        !modal.is(e.target) && modal.has(e.target).length === 0) { 
+      !modal.is(e.target) && modal.has(e.target).length === 0) {
       btn.removeClass('active');
       modal.removeClass('active');
     }
   }
-  
-  $(document).on('mouseup', function (e){ 
+
+  $(document).on('mouseup', function (e) {
     closeModal($(".cab-notify"), $(".cab-notify__modal"), e);
     closeModal($(".cab-hero"), $(".cab-submenu"), e);
   });
 
   // hero modal
 
-  $('.cab-hero').on('click', function(){
+  $('.cab-hero').on('click', function () {
     let toggleItem = $('.cab-submenu');
 
     $(this).toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
     }
 
-    if(toggleItem.length){
+    if (toggleItem.length) {
       toggleItem.toggleClass('active');
     }
   })
 
   // submenu
 
-  $('#drop-menu .cab-submenu__item').on('click', function(){
+  $('#drop-menu .cab-submenu__item').on('click', function () {
     $(this).parent().toggleClass('active');
     $(this).siblings('.cab-submenu__drop-content').slideToggle(300);
     $(this).parent().siblings().removeClass('active').find('.cab-submenu__drop-content').slideUp(300);
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
@@ -711,13 +709,13 @@
 
   // custom select
 
-  $('.custom-select__btn').on('click', function(){
+  $('.custom-select__btn').on('click', function () {
     let thisSelect = $(this).parent();
     let toggleItem = thisSelect.find('.custom-select__drop');
 
     $(this).parent().toggleClass('active');
 
-    if($('.nicescroll-box').length !== 0){
+    if ($('.nicescroll-box').length !== 0) {
       setTimeout(() => {
         $(".nicescroll-box").getNiceScroll().resize();
       }, 500);
@@ -729,14 +727,14 @@
   })
 
   var customSelectDrop = (btn, modal, e) => {
-    if (!btn.is(e.target) && btn.has(e.target).length === 0 && 
-        !modal.is(e.target) && modal.has(e.target).length === 0) { 
+    if (!btn.is(e.target) && btn.has(e.target).length === 0 &&
+      !modal.is(e.target) && modal.has(e.target).length === 0) {
       btn.parent().removeClass('active');
       modal.fadeOut();
     }
   }
-  
-  $(document).on('mouseup', function (e){ 
+
+  $(document).on('mouseup', function (e) {
     customSelectDrop($(".custom-select__btn"), $(".custom-select__drop"), e);
   });
 
@@ -752,7 +750,7 @@
     drop.fadeOut();
   }
 
-  $('.custom-select__item').on('click', function(){
+  $('.custom-select__item').on('click', function () {
     customSelectChange($(this));
   })
 
@@ -809,8 +807,8 @@
       },
     }
   });
-  
-  roadYears.on('slideChangeTransitionEnd', function(){
+
+  roadYears.on('slideChangeTransitionEnd', function () {
     roadYears.update();
   })
 
@@ -826,7 +824,7 @@
     speed: 300,
   });
 
-  roadYears.on('slideChange', function(){
+  roadYears.on('slideChange', function () {
     roadQ.slideTo(roadYears.realIndex + 1)
   })
 
@@ -895,7 +893,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -915,7 +913,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -935,7 +933,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -955,7 +953,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -975,7 +973,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -995,7 +993,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1015,7 +1013,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1035,7 +1033,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1055,7 +1053,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1075,7 +1073,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1095,7 +1093,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1115,7 +1113,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1135,7 +1133,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1155,7 +1153,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1175,7 +1173,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1195,7 +1193,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1215,7 +1213,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1235,7 +1233,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1255,7 +1253,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1275,7 +1273,7 @@
     breakpoints: {
       767: {
         slidesPerView: 10,
-        
+
       }
     }
   });
@@ -1305,10 +1303,261 @@
   $('.footer-lang').click(function () {
     $(this).toggleClass('open');
   });
-  $(document).on('click', function(event) {
+  $(document).on('click', function (event) {
     if (!$(event.target).closest('.footer-lang').length) {
       $('.footer-lang').removeClass('open');
     }
   });
+
+  // btn timer
+
+  const rect = document.querySelector(".cab-modal__timer-line rect");
+
+  const setPercent = (item) => {
+    let length = item.getTotalLength();
+    let percent = item.dataset.percent;
+    let to = length * ((100 - percent) / 100);
+    let offset = Math.max(0, to);
+
+    item.style.strokeDasharray = length;
+    item.style.strokeDashoffset = offset;
+  }
+
+  // setPercent(rect);  вызвать функцию для нужной линии
+  if ($('#refs-chart').length) {
+
+    Highcharts.chart('refs-chart', {
+      chart: {
+        type: 'pie',
+        backgroundColor: 'transparent'
+      },
+      title: {
+        text: '',
+      },
+      tooltip: {
+        headerFormat: '',
+        useHTML: true,
+        pointFormat: '<span style="width:9px;height:9px;border-radius:50%;border:2px solid {point.color};display:inline-block;"></span> <b> {point.name}</b><br/>' +
+          '<b style="color:{point.color}">{point.y} USD</b><br/>'
+      },
+      plotOptions: {
+        pie: {
+          dataLabels: {
+            enabled: true,
+            headerFormat: '',
+            useHTML: true,
+            pointFormat: '<span style="width:9px;height:9px;border-radius:50%;border:2px solid {point.color};display:inline-block;"></span> <b> {point.name}</b><br/>' +
+              '<b style="color:{point.color}">{point.y} USD</b><br/>'
+          },
+        }
+      },
+      series: [{
+        minPointSize: 65,
+        innerSize: '50%',
+        zMin: 0,
+        colors: ['#F87C55', '#55A0F8', '#55C7F8', '#F85555'],
+        name: 'lvls',
+        data: [{
+          name: '1 level',
+          z: '39%',
+          y: 52256645.12,
+        }, {
+          name: '2 level',
+          z: '15%',
+          y: 43256450.12,
+        }, {
+          name: '3 level',
+          z: '32%',
+          y: 58256645.12,
+        }, {
+          name: '4 level',
+          z: '24%',
+          y: 50256645.12,
+        }]
+      }],
+      responsive: {
+        rules: [{
+          chartOptions: {
+            plotOptions: {
+              pie: {
+                dataLabels: {
+                  enabled: false
+                }
+              }
+            }
+          },
+          condition: {
+            maxWidth: 460
+          },
+        }]
+      }
+    });
+  }
+
+  if ($('#dep-chart').length) {
+    Highcharts.chart('dep-chart', {
+      chart: {
+        type: 'pie',
+        backgroundColor: 'transparent',
+      },
+      title: {
+        text: '',
+      },
+      tooltip: {
+        headerFormat: '',
+        useHTML: true,
+        pointFormat: '<span style="width:4px;height:12px;border-radius:14px;background-color:{point.color};display:inline-block;"></span> <b> {point.name}</b><br/>' +
+          '<b style="color:{point.color}">{point.y}</b><br/>'
+      },
+      plotOptions: {
+        pie: {
+          dataLabels: {
+            enabled: true,
+            headerFormat: '',
+            useHTML: true,
+            distance: -38,
+            pointFormat: '<b>{point.y}</b>',
+            style: {
+              fontSize: '24px',
+              color: '#fff',
+            },
+            size: '100%',
+          },
+        }
+      },
+      series: [{
+        innerSize: '50%',
+        colors: ['#56CE60', '#F85555'],
+        name: 'lvls',
+        data: [{
+          name: 'Активных депозитов',
+          y: 33,
+        }, {
+          name: 'Закрытых депозитов',
+          y: 78,
+        },]
+      }],
+    });
+  }
+
+  if ($('#modal-chart').length) {
+    Highcharts.stockChart('modal-chart', {
+      chart: {
+        type: 'area',
+      },
+      rangeSelector: {
+        enabled: false,
+      },
+      navigator: {
+        enabled: false
+      },
+      title: {
+        text: ''
+      },
+      scrollbar: {
+        enabled: true,
+        barBackgroundColor: '#272727',
+        barBorderColor: '#cccccc',
+        barBorderRadius: 4,
+        barBorderWidth: 0,
+        height: 12,
+        trackBackgroundColor: 'transparent',
+        trackBorderColor: '#F5F5F5',
+        trackBorderRadius: 7,
+        trackBorderWidth: 1,
+        rifleColor: '#ffffff'
+      },
+      legend: {
+        enabled: false
+      },
+      yAxis: {
+        title: {
+          enabled: false
+        },
+        gridLineWidth: 1,
+        gridLineColor: '#F5F5F5',
+        opposite: false
+      },
+      xAxis: {
+        type: 'datetime',
+        min: Date.UTC(2023, 2, 1),
+        max: Date.UTC(2023, 2, 7),
+        gridLineWidth: 1,
+        gridLineColor: '#F5F5F5'
+      },
+      tooltip: {
+        backgroundColor: null,
+        borderWidth: 0,
+        shadow: false,
+        useHTML: true,
+        pointFormat: '<div class="chart-tip__head"><img src="./assets/img/tip-date.svg">{point.x:%b %d, %Y}</div>' +
+          '<div class="chart-tip__row">Profit (%) <span>{point.y}%</span></div>' +
+          '<div class="chart-tip__row">Profit ($) <span>{point.z}</span></div>',
+        style: {
+          padding: 0
+        }
+      },
+      plotOptions: {
+        area: {
+          pointStart: 1940,
+          marker: {
+            enabled: false,
+            symbol: 'circle',
+            radius: 4,
+            states: {
+              hover: {
+                enabled: true
+              }
+            }
+          },
+          lineWidth: 2,
+          lineColor: '#5AB4F5',
+          fillColor: {
+            linearGradient: {
+              x1: 0,
+              y1: 0,
+              x2: 0,
+              y2: 1
+            },
+            stops: [
+              [0, Highcharts.color('#5AB4F5').setOpacity(0.1).get('rgba')],
+              [1, Highcharts.color('#5AB4F5').setOpacity(0).get('rgba')]
+            ]
+          },
+        }
+      },
+      series: [{
+        type: 'area',
+        data: [
+          { x: Date.UTC(2023, 2, 1), y: 15, z: 51 },
+          { x: Date.UTC(2023, 2, 2), y: 20, z: 52 },
+          { x: Date.UTC(2023, 2, 3), y: 30, z: 53 },
+          { x: Date.UTC(2023, 2, 4), y: 25, z: 54 },
+          { x: Date.UTC(2023, 2, 5), y: 35, z: 55 },
+          { x: Date.UTC(2023, 2, 6), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 7), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 8), y: 40, z: 124842.1234567 },
+          { x: Date.UTC(2023, 2, 9), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 10), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 11), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 12), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 13), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 14), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 15), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 16), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 17), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 18), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 19), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 20), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 21), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 22), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 23), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 24), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 25), y: 40, z: 56 },
+          { x: Date.UTC(2023, 2, 26), y: 40, z: 56 },
+        ]
+      }]
+    });
+  }
 
 })();
