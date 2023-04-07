@@ -20,7 +20,7 @@
     </div>
     <div class="wrapper">
       <div class="cab"> 
-        <div class="cab-notify__modal"> 
+        <div class="cab-notify__modal" id="modal-1">
           <div class="cab-notify__head">
             <h3>Уведомления</h3>
             <div class="cab-notify__link"> <img src="assets/img/check.svg"/>Mark all as read
@@ -38,7 +38,7 @@
               </div>
             </div>
           </div>
-          <div class="cab-notify__content"> 
+          <div class="cab-notify__content">
             <div class="nicescroll-box"> 
               <div class="wrap">  <a class="cab-notify__item" href="#">
                   <div class="cab-notify__date"> 
@@ -56,22 +56,22 @@
             </div><a class="m-btn" href="#">View all notifications</a>
           </div>
         </div>
-        <div class="cab-submenu">
-          <div class="nicescroll-box"> 
-            <div class="wrap"> <a class="cab-submenu__item" href="#"> 
-                <div class="cab-submenu__icon"> 
+        <div class="cab-submenu" id="modal-2">
+          <div class="nicescroll-box">
+            <div class="wrap"><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon">
                   <svg>
                     <use xlink:href="assets/img/sprite.svg#user-2"></use>
                   </svg>
                 </div>
-                <p>Профиль</p></a><a class="cab-submenu__item soon" href="#"> 
-                <div class="cab-submenu__icon"> 
+                <p>Профиль</p></a><a class="cab-submenu__item soon" href="#">
+                <div class="cab-submenu__icon">
                   <svg>
                     <use xlink:href="assets/img/sprite.svg#check-2"></use>
                   </svg>
                 </div>
-                <p>Верификация<span>soon</span></p></a><a class="cab-submenu__item" href="#"> 
-                <div class="cab-submenu__icon"> 
+                <p>Верификация<span>soon</span></p></a><a class="cab-submenu__item" href="#">
+                <div class="cab-submenu__icon">
                   <svg>
                     <use xlink:href="assets/img/sprite.svg#shield"></use>
                   </svg>
@@ -81,7 +81,7 @@
               <div class="cab-submenu__drop" id="drop-menu">
                 <div class="cab-submenu__drop-item">
                   <div class="cab-submenu__item">
-                    <div class="cab-submenu__icon"> 
+                    <div class="cab-submenu__icon">
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#cab-menu-2"></use>
                       </svg>
@@ -92,13 +92,13 @@
                     </svg>
                   </div>
                   <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
-                      <div class="cab-submenu__icon"> 
+                      <div class="cab-submenu__icon">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#icon-in"></use>
                         </svg>
                       </div>
                       <p>Пополнить Баланс</p></a><a class="cab-submenu__item" href="#">
-                      <div class="cab-submenu__icon"> 
+                      <div class="cab-submenu__icon">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#icon-out"></use>
                         </svg>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="cab-submenu__drop-item">
                   <div class="cab-submenu__item">
-                    <div class="cab-submenu__icon"> 
+                    <div class="cab-submenu__icon">
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#cab-menu-3"></use>
                       </svg>
@@ -118,13 +118,13 @@
                     </svg>
                   </div>
                   <div class="cab-submenu__drop-content"><a class="cab-submenu__item" href="#">
-                      <div class="cab-submenu__icon"> 
+                      <div class="cab-submenu__icon">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#open-dep"></use>
                         </svg>
                       </div>
                       <p>Открыть Депозит</p></a><a class="cab-submenu__item" href="#">
-                      <div class="cab-submenu__icon"> 
+                      <div class="cab-submenu__icon">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#my-dep"></use>
                         </svg>
@@ -132,14 +132,14 @@
                       <p>Мои Депозиты</p></a></div>
                 </div>
               </div><a class="cab-submenu__item" href="#">
-                <div class="cab-submenu__icon"> 
+                <div class="cab-submenu__icon">
                   <svg>
                     <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
                   </svg>
                 </div>
                 <p>Тикеты</p>
                 <div class="cab-submenu__count">2</div></a><a class="cab-submenu__item" href="#">
-                <div class="cab-submenu__icon"> 
+                <div class="cab-submenu__icon">
                   <svg>
                     <use xlink:href="assets/img/sprite.svg#cab-menu-11"></use>
                   </svg>
@@ -148,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-3">
           <div class="cab-modal__wrap cab-modal__wrap_bal">
             <div class="cab-modal__close"> 
               <svg>
@@ -222,7 +222,7 @@
             </div>
           </div>
         </div>
-        <div class="cab-modal cab-modal_msg">
+        <div class="cab-modal cab-modal_msg" id="modal-4">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -246,7 +246,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="cab-modal cab-modal_msg green">
+        <div class="cab-modal cab-modal_msg green" id="modal-5">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -270,7 +270,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="cab-modal cab-modal_msg orange">
+        <div class="cab-modal cab-modal_msg orange" id="modal-6">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -294,7 +294,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="cab-modal cab-modal_msg blue">
+        <div class="cab-modal cab-modal_msg blue" id="modal-7">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -317,7 +317,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-8">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -335,7 +335,7 @@
             <div class="text-center"><a class="cab-link" href="#"> <span>Сделать это позже</span></a></div>
           </div>
         </div>
-        <div class="cab-modal cab-modal_usd">
+        <div class="cab-modal cab-modal_usd" id="modal-9">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -349,7 +349,7 @@
             </div><a class="cab-btn cab-btn_full cab-btn_green" href="#">Пополнить баланс</a>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-10">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -363,7 +363,7 @@
             </div><a class="cab-btn cab-btn_full cab-btn_green" href="#">Пополнить баланс</a>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-11">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -380,7 +380,7 @@
             </div><a class="cab-btn cab-btn_full cab-btn_black" href="#">Готово</a>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-12">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -396,7 +396,7 @@
             <div class="text-center"><a class="cab-link" href="#"> <span>Отмена</span></a></div>
           </div>
         </div>
-        <div class="cab-modal cab-modal_upline">
+        <div class="cab-modal cab-modal_upline" id="modal-13">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -480,7 +480,7 @@
             </div>
           </div>
         </div>
-        <div class="cab-modal cab-modal_hero">
+        <div class="cab-modal cab-modal_hero" id="modal-14">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -693,7 +693,7 @@
             </div>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-15">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -710,7 +710,7 @@
             </div><a class="cab-btn cab-btn_black cab-btn_full" href="#">Отменить заявку </a>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-16">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -858,7 +858,7 @@
             <button class="cab-btn cab-btn_black cab-btn_full">скачать выписку</button>
           </div>
         </div>
-        <div class="cab-modal">
+        <div class="cab-modal" id="modal-17">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -1218,7 +1218,7 @@
             <button class="cab-btn cab-btn_black cab-btn_full">скачать выписку</button>
           </div>
         </div>
-        <div class="cab-modal cab-modal_faq">
+        <div class="cab-modal cab-modal_faq" id="modal-18">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -1266,7 +1266,7 @@
             <button class="cab-btn cab-btn_red cab-btn_full">Создать тикет</button>
           </div>
         </div>
-        <div class="cab-modal cab-modal_rank-his">
+        <div class="cab-modal cab-modal_rank-his" id="modal-19">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
@@ -1356,7 +1356,7 @@
             </div>
           </div>
         </div>
-        <div class="cab-modal cab-modal_chart">
+        <div class="cab-modal cab-modal_chart" id="modal-20">
           <div class="cab-modal__wrap">
             <div class="cab-modal__close"> 
               <svg>
