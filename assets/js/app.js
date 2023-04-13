@@ -264,7 +264,10 @@
       let trigger = e.trigger;
       let position = $(trigger).offset();
       let off_top = $(trigger).outerHeight(true)+7;
-      $('.copy-success').attr('style', 'position: absolute; top: ' + (position.top - off_top) + 'px; left: ' + position.left + 'px;').fadeIn();
+      let width = $(trigger).outerWidth(true);
+      let right = $(window).width()-(position.left)-width;
+      console.log(width);
+      $('.copy-success').attr('style', 'position: absolute; top: ' + (position.top - off_top) + 'px; right: ' + right + 'px;').fadeIn();
       $('.copy-success').delay(3000).fadeOut();
     });
   }

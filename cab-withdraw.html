@@ -1757,8 +1757,8 @@
                         <div class="cab-input__text">Minimum amount to withdrawal: <span>5 USDT</span></div>
                       </div>
                       <div class="col-lg-5">
-                        <div class="cab-invest__btc"> 
-                          <div class="cab-invest__btc-title"> <img src="assets/img/btc-2.svg"/>Bitcoin Price (BTC)
+                        <div class="cab-invest__btc cab-laptop__hidden">
+                          <div class="cab-invest__btc-title"><img src="assets/img/btc-2.svg"/>Bitcoin Price (BTC)
                           </div>
                           <div class="cab-invest__btc-val">$16 438.27<span class="red">
                               <svg>
@@ -1802,11 +1802,14 @@
                     <div class="cab-input__title">Wallet to Withdraw</div>
                     <div class="cab-address"> 
                       <p id="wallet">0x3506424f91fd33084466f402d5d97f05f8e3b4af</p>
-                      <div class="cab-address__copy copy-text" data-clipboard-target="#wallet">
+                      <div class="cab-address__copy">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#copy-2"></use>
                         </svg>
                       </div>
+                    </div>
+                    <div class="cab-input cab-input_set">
+                      <input type="text" value="0x3506424f91fd33084466f402d5d97f05f8e3b4af">
                     </div>
                     <div class="cab-warning"> 
                       <div class="cab-warning__icon"> 
@@ -1857,7 +1860,7 @@
                           <div class="cab-input__title">Введите код</div>
                           <div class="cab-pass__box">
                             <div class="cab-pass__input"> 
-                              <input type="password" placeholder="******">
+                              <input type="tel" placeholder="******">
                             </div>
                             <div class="m-input__show">
                               <svg>
@@ -1874,6 +1877,16 @@
               </div>
               <div class="cab-invest__footer"><img src="assets/img/cont-msg-icon.svg"/>
                 <p>Before starting the withdrawal procedure, please read the rules for replanishing the balance and withdrawing funds  <a href="#">on this page</a></p>
+              </div>
+              <div class="col-12">
+                <div class="cab-invest__btc cab-laptop__visible">
+                  <div class="cab-invest__btc-title"><img src="assets/img/btc-2.svg"/>Bitcoin Price (BTC)
+                  </div>
+                  <div class="cab-invest__btc-val">$16 438.27<span class="red">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#arrow-5"></use>
+                      </svg>1.56%</span></div>
+                </div>
               </div>
             </div>
             <div class="cab-table cab-table_invest"> 

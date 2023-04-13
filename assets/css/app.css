@@ -26671,13 +26671,13 @@ input:focus::placeholder {
             -ms-flex-pack: center;
                 justify-content: center;
         margin-left: 5px;
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background-color: #F12A23; }
         .cab-table__status-btn svg {
           fill: #fff;
-          width: 6px;
+          width: 5px;
           height: 6px; }
       .cab-table__status .tip {
         margin-left: 5px; }
@@ -31551,7 +31551,8 @@ input:focus::placeholder {
             width: auto; } }
         @media (max-width: 767px) {
           .cab-invest__bal-box {
-            width: 100%; } }
+            width: 100%;
+            min-width: auto; } }
         .cab-invest__bal-box:after {
           position: absolute;
           top: 50%;
@@ -31765,6 +31766,10 @@ input:focus::placeholder {
       font-size: 30px;
       color: #222222;
       background-color: transparent; }
+      @media (max-width: 767px) {
+        .cab-input input {
+          font-size: 14px;
+          padding: 10px 15px; } }
     .cab-input textarea {
       width: 100%;
       border: none;
@@ -39194,6 +39199,15 @@ input:focus::placeholder {
   @media (max-width: 1799px) {
     .cab-xl__visible {
       display: none; } }
+  @media (max-width: 991px) {
+    .cab-laptop__hidden {
+      display: none; } }
+  @media (min-width: 768px) {
+    .cab-laptop__visible {
+      display: none; } }
+  @media (max-width: 767px) {
+    .cab-sm-mb__30 {
+      margin-bottom: 15px; } }
 
 .recovery-texts {
   margin-bottom: 30px; }
