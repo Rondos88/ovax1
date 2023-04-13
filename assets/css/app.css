@@ -27018,10 +27018,12 @@ input:focus::placeholder {
         border-color: rgba(249, 141, 81, 0.3); }
       .cab-table_support .cab-table__wrap table tr.blue td {
         background-color: rgba(81, 148, 249, 0.03); }
-      .cab-table_support .cab-table__wrap table tr.blue:hover td {
-        border-color: rgba(81, 148, 249, 0.3); }
-      .cab-table_support .cab-table__wrap table tr:hover td {
-        border-color: rgba(34, 34, 34, 0.3); }
+      @media (min-width: 768px) {
+        .cab-table_support .cab-table__wrap table tr.blue:hover td {
+          border-color: rgba(81, 148, 249, 0.3); } }
+      @media (min-width: 768px) {
+        .cab-table_support .cab-table__wrap table tr:hover td {
+          border-color: rgba(34, 34, 34, 0.3); } }
       .cab-table_support .cab-table__wrap table td {
         background-color: rgba(0, 0, 0, 0.03);
         padding: 24px 30px;
@@ -30726,6 +30728,10 @@ input:focus::placeholder {
           font-size: 10px;
           color: #fff;
           z-index: 2; }
+          @media (max-width: 767px) {
+            .cab-investor__info-img_lvl span {
+              bottom: -23px;
+              font-size: 9px; } }
     .cab-investor__info_big {
       padding-left: 75px;
       min-height: 56px; }
