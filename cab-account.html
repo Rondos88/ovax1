@@ -14,9 +14,11 @@
   </head>
   <body>
     <div class="copy-success">
-      <svg>
-        <use xlink:href="assets/img/sprite.svg#check"></use>
-      </svg>
+      <div class="copy-success__wrap">
+        <div class="copy-success__inner"><img src="assets/img/cloud_check.svg"/>
+          <p>Copied</p>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
       <div class="cab"> 
@@ -728,7 +730,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Уровень</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -876,7 +878,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Тип Операции</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -1591,7 +1593,7 @@
                         <h3>Пополнить</h3>
                         <p>Account replenishment</p>
                         <div class="cab-btns__icon"> <img src="assets/img/dbl-arrow.svg"/>
-                        </div></a><a class="cab-btns__item" href="#">
+                        </div></a><a class="cab-btns__item cab-btns__item_grey" href="#">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#arrow-up"></use>
                         </svg>
@@ -1942,22 +1944,22 @@
                             <div class="cab-table__more">+</div>
                           </td>
                         </tr>
-                        <tr> 
-                          <td> 
+                        <tr>
+                          <td>
                             <div class="cab-table__star">
                               <svg>
                                 <use xlink:href="assets/img/sprite.svg#star"></use>
                               </svg>
                             </div>
                           </td>
-                          <td> 
-                            <div class="cab-table__cur"> 
-                              <h3> <img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
                               </h3>
                             </div>
                           </td>
-                          <td> 
-                            <div class="cab-table__val"> 
+                          <td>
+                            <div class="cab-table__val">
                               <h3><span>43572.12345678</span>
                                 <div class="cab-cur">usd</div>
                               </h3>
@@ -1968,7 +1970,7 @@
                               <h3>0.00
                                 <div class="cab-cur">usd</div>
                               </h3>
-                              <p> 
+                              <p>
                                 <svg>
                                   <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
                                 </svg>+43572.12345678 вчера
@@ -1987,7 +1989,1071 @@
                               <h3>0.00
                                 <div class="cab-cur">usd</div>
                               </h3>
-                              <p class="green"> 
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__more">+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="cab-table__star">
+                              <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__cur">
+                              <h3><img src="assets/img/bnb-2.svg"/>Binance (BNB)
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3><span>43572.12345678</span>
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p>
+                                <svg>
+                                  <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
+                                </svg>+43572.12345678 вчера
+                              </p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>43572.12345678
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="cab-table__val">
+                              <h3>0.00
+                                <div class="cab-cur">usd</div>
+                              </h3>
+                              <p class="green">
                                 <svg>
                                   <use xlink:href="assets/img/sprite.svg#arrow-4"></use>
                                 </svg>+43572.12345678 вчера
@@ -2248,6 +3314,177 @@
                       </tbody>
                     </table>
                   </div>
+                </div>
+                <div class="cab-head cab-xl__hidden">
+                  <h3>Быстро Открыть Депозит</h3><a href="#"><span>Депозиты</span>
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                    </svg></a>
+                </div>
+                <div class="cab-fast cab-xl__hidden">
+                  <div class="cab-fast__box">
+                    <div class="cab-fast__row">
+                      <div class="custom-select cab-fast__sel"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                        </svg>
+                        <div class="cab-fast__sel-btn custom-select__btn"> 
+                          <h3>Basic <span>(50 дней)</span></h3>
+                          <p>1.00% - 1.25% daily</p>
+                        </div>
+                        <div class="cab-fast__sel-drop custom-select__drop"> 
+                          <div class="custom-select__item cab-fast__sel-item active">
+                            <h3>Basic <span>(10 дней)</span></h3>
+                            <p>1.00% - 1.25% daily</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item">
+                            <h3>Basic <span>(20 дней)</span></h3>
+                            <p>1.00% - 1.25% daily</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item">
+                            <h3>Basic <span>(30 дней)</span></h3>
+                            <p>1.00% - 1.25% daily</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="custom-select cab-fast__sel cab-fast__sel_icon"> 
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
+                        </svg>
+                        <div class="cab-fast__sel-btn custom-select__btn"> <img src="assets/img/btc.svg"/>
+                          <h3>Bitcoin <span>(BTC) </span></h3>
+                          <p>0.00000125</p>
+                        </div>
+                        <div class="cab-fast__sel-drop custom-select__drop"> 
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/usd.svg"/>
+                            <h3>U.S. Dollar<span> (usd)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/btc.svg"/>
+                            <h3>Bitcoin<span> (btc)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/eth.svg"/>
+                            <h3>Ethereum<span> (eth)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/ltc.svg"/>
+                            <h3>Litecoin<span> (ltc)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/trx.svg"/>
+                            <h3>Tron<span> (trx)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/usdt.svg"/>
+                            <h3>Tether<span> (usdt)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/usdc.svg"/>
+                            <h3>USD Coin<span> (usdc)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/busd.svg"/>
+                            <h3>Binance USD<span> (busd)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/bnb.svg"/>
+                            <h3>Binance Coin<span> (bnb)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/ada.svg"/>
+                            <h3>Cardano<span> (ada)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/xrp.svg"/>
+                            <h3>Ripple<span> (xrp)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/bch.svg"/>
+                            <h3>BitcoinCash<span> (bch)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/dai.svg"/>
+                            <h3>Dai<span> (dai)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/sol.svg"/>
+                            <h3>Solana<span> (sol)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/cro.svg"/>
+                            <h3>Cronos<span> (cro)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/ethc.svg"/>
+                            <h3>Ethereum Classic<span> (ethc)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/doge.svg"/>
+                            <h3>Doge<span> (doge)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/avax.svg"/>
+                            <h3>Avalanche<span> (avax)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/flow.svg"/>
+                            <h3>Flow<span> (flow)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/monero.svg"/>
+                            <h3>Monero<span> (monero)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/link.svg"/>
+                            <h3>Chainlink<span> (link)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/atom.svg"/>
+                            <h3>Cosmos<span> (atom)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/algo.svg"/>
+                            <h3>Algorand<span> (algo)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/dot.svg"/>
+                            <h3>Polkadot<span> (dot)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/ftx.svg"/>
+                            <h3>FTX<span> (ftx)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/xlm.svg"/>
+                            <h3>Stellar<span> (xlm)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/matic.svg"/>
+                            <h3>Polygon<span> (matic)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/near.svg"/>
+                            <h3>Near<span> (near)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/tusd.svg"/>
+                            <h3>TrueUSD<span> (tusd)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                          <div class="custom-select__item cab-fast__sel-item"><img src="assets/img/usdp.svg"/>
+                            <h3>Pax Dollar<span> (usdp)</span></h3>
+                            <p>0.00000125</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="cab-fast__input"> 
+                      <p>Сумма</p>
+                      <input type="text" placeholder="0"><span>BTC</span>
+                    </label>
+                  </div>
+                  <button class="m-btn m-btn_full">Открыть депозит</button>
                 </div>
                 <div class="cab-career-tabs" data-tabs-btns="cab-career">
                   <div class="cab-career-tabs__item" data-tabs-btn="1">Карьера</div>
@@ -3869,8 +5106,8 @@
               </div>
             </div>
             <div class="col-xl-4">
-              <div class="cab-aside"> 
-                <div class="cab-geo"> 
+              <div class="cab-aside">
+                <div class="cab-geo cab-xl__visible">
                   <div class="cab-geo__zone">
                     <p> <img src="assets/img/geo.svg"/>GMT +0
                     </p>
@@ -3916,7 +5153,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cab-2fa active">
+                <div class="cab-2fa active cab-xl__visible">
                   <div class="cab-2fa__icon"> <img src="assets/img/cab-2fa-icon.svg"/>
                   </div>
                   <div class="cab-2fa__text"> <span>Two-factor </span>authentication</div>
@@ -3930,13 +5167,13 @@
                         </svg></span></div><span class="on">Включен</span>
                   </div>
                 </div>
-                <div class="cab-head"> 
-                  <h3>Быстро Открыть Депозит</h3><a href="#"> <span>Депозиты</span>
+                <div class="cab-head cab-xl__visible">
+                  <h3>Быстро Открыть Депозит</h3><a href="#"><span>Депозиты</span>
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
                     </svg></a>
                 </div>
-                <div class="cab-fast"> 
+                <div class="cab-fast cab-xl__visible">
                   <div class="cab-fast__box">
                     <div class="cab-fast__row">
                       <div class="custom-select cab-fast__sel"> 
@@ -4370,6 +5607,66 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="cab-geo cab-xl__hidden">
+            <div class="cab-geo__zone">
+              <p> <img src="assets/img/geo.svg"/>GMT +0
+              </p>
+            </div>
+            <div class="cab-geo__weather">
+              <div class="cab-geo__weather-top">
+                <div class="cab-geo__deg">18<span>c</span></div>
+                <div class="cab-geo__day"> 
+                  <div class="cab-geo__icon"><img src="assets/img/weather.png"/>
+                  </div>
+                  <div class="cab-geo__date">
+                    <h3> <img src="assets/img/calendar.svg"/>Сегодня
+                    </h3>
+                    <p>14 Jule, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cab-geo__city"> 
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#map"></use>
+                </svg>
+                <select class="sel-text sel-search">
+                  <option value="United Arab, Dubai" data-text="Dubai">United Arab, </option>
+                  <option value="United " data-text="Lorem Ipsum">United </option>
+                  <option value="United Arab, Dubai" data-text="Dubai">United Arab, </option>
+                  <option value="United " data-text="Lorem Ipsum">United </option>
+                  <option value="United Arab, Dubai" data-text="Dubai">United Arab, </option>
+                  <option value="United " data-text="Lorem Ipsum">United </option>
+                  <option value="United Arab, Dubai" data-text="Dubai">United Arab, </option>
+                  <option value="United " data-text="Lorem Ipsum">United </option>
+                </select>
+              </div>
+            </div>
+            <div class="cab-geo__time">
+              <div class="cab-geo__time-item"><span>12</span>
+                <p>Часов</p>
+              </div>
+              <div class="cab-geo__time-item"><span>12</span>
+                <p>Минут</p>
+              </div>
+              <div class="cab-geo__time-item"><span>12</span>
+                <p>Секунд</p>
+              </div>
+            </div>
+          </div>
+          <div class="cab-2fa active cab-xl__hidden">
+            <div class="cab-2fa__icon"> <img src="assets/img/cab-2fa-icon.svg"/>
+            </div>
+            <div class="cab-2fa__text"> <span>Two-factor </span>authentication</div>
+            <div class="cab-2fa__check"><span class="off">Выключен</span>
+              <div class="cab-2fa__check-icon"> <span class="off">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#close-3"></use>
+                  </svg></span><span class="on">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#check"></use>
+                  </svg></span></div><span class="on">Включен</span>
             </div>
           </div>
           <div class="cab-news">

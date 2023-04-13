@@ -14,9 +14,11 @@
   </head>
   <body>
     <div class="copy-success">
-      <svg>
-        <use xlink:href="assets/img/sprite.svg#check"></use>
-      </svg>
+      <div class="copy-success__wrap">
+        <div class="copy-success__inner"><img src="assets/img/cloud_check.svg"/>
+          <p>Copied</p>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
       <div class="cab"> 
@@ -728,7 +730,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Уровень</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -876,7 +878,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Тип Операции</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -1591,7 +1593,7 @@
                         <h3>Пополнить</h3>
                         <p>Account replenishment</p>
                         <div class="cab-btns__icon"> <img src="assets/img/dbl-arrow.svg"/>
-                        </div></a><a class="cab-btns__item" href="#">
+                        </div></a><a class="cab-btns__item cab-btns__item_grey" href="#">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#arrow-up"></use>
                         </svg>
@@ -3370,8 +3372,8 @@
               </div>
             </div>
             <div class="col-xl-4">
-              <div class="cab-aside"> 
-                <div class="cab-geo"> 
+              <div class="cab-aside">
+                <div class="cab-geo cab-xl__visible">
                   <div class="cab-geo__zone">
                     <p> <img src="assets/img/geo.svg"/>GMT +0
                     </p>
@@ -3417,7 +3419,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="cab-2fa active">
+                <div class="cab-2fa active cab-xl__visible">
                   <div class="cab-2fa__icon"> <img src="assets/img/cab-2fa-icon.svg"/>
                   </div>
                   <div class="cab-2fa__text"> <span>Two-factor </span>authentication</div>
@@ -3431,13 +3433,13 @@
                         </svg></span></div><span class="on">Включен</span>
                   </div>
                 </div>
-                <div class="cab-head"> 
-                  <h3>Быстро Открыть Депозит</h3><a href="#"> <span>Депозиты</span>
+                <div class="cab-head cab-xl__visible">
+                  <h3>Быстро Открыть Депозит</h3><a href="#"><span>Депозиты</span>
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
                     </svg></a>
                 </div>
-                <div class="cab-fast"> 
+                <div class="cab-fast cab-xl__visible">
                   <div class="cab-fast__box">
                     <div class="cab-fast__row">
                       <div class="custom-select cab-fast__sel"> 

@@ -14,9 +14,11 @@
   </head>
   <body>
     <div class="copy-success">
-      <svg>
-        <use xlink:href="assets/img/sprite.svg#check"></use>
-      </svg>
+      <div class="copy-success__wrap">
+        <div class="copy-success__inner"><img src="assets/img/cloud_check.svg"/>
+          <p>Copied</p>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
       <div class="cab"> 
@@ -728,7 +730,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Уровень</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -876,7 +878,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Тип Операции</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -1634,7 +1636,15 @@
                       <h3>Bitcoin (BTC)</h3>
                       <p>Your Balance: <b>0.23456789</b><span class="cab-cur">BTC</span></p>
                     </div>
-                    <div class="cab-select__drop custom-select__drop"> 
+                    <div class="cab-select__drop custom-select__drop">
+                      <div class="cab-select__search">
+                        <button>
+                          <svg>
+                            <use xlink:href="assets/img/sprite.svg#search"></use>
+                          </svg>
+                        </button>
+                        <input type="text" placeholder="Search Currency">
+                      </div>
                       <div class="cab-select__list custom-select__list">
                         <div class="custom-select__item cab-select__item"><img src="assets/img/usd.svg"/>
                           <h3>U.S. Dollar (usd)</h3>
@@ -1951,7 +1961,7 @@
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#calendar"></use>
                         </svg>
-                        <input class="datepicker-trigger" placeholder="Date">
+                        <input class="datepicker-trigger" placeholder="Date" readonly autocomplete="off">
                         <div class="cab-filter__date-arrow">
                           <svg>
                             <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
@@ -2390,7 +2400,7 @@
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#calendar"></use>
                         </svg>
-                        <input class="datepicker-trigger" placeholder="Date">
+                        <input class="datepicker-trigger" placeholder="Date" readonly autocomplete="off">
                         <div class="cab-filter__date-arrow">
                           <svg>
                             <use xlink:href="assets/img/sprite.svg#arrow-2"></use>

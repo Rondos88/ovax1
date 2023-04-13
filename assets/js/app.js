@@ -261,8 +261,10 @@
 
   function affiliatelink(id) {
     id.on('success', function (e) {
-
-      $('.copy-success').fadeIn();
+      let trigger = e.trigger;
+      let position = $(trigger).offset();
+      let off_top = $(trigger).outerHeight(true)+7;
+      $('.copy-success').attr('style', 'position: absolute; top: ' + (position.top - off_top) + 'px; left: ' + position.left + 'px;').fadeIn();
       $('.copy-success').delay(3000).fadeOut();
     });
   }

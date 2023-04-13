@@ -14,9 +14,11 @@
   </head>
   <body>
     <div class="copy-success">
-      <svg>
-        <use xlink:href="assets/img/sprite.svg#check"></use>
-      </svg>
+      <div class="copy-success__wrap">
+        <div class="copy-success__inner"><img src="assets/img/cloud_check.svg"/>
+          <p>Copied</p>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
       <div class="cab"> 
@@ -728,7 +730,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Уровень</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -876,7 +878,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Тип Операции</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -1600,16 +1602,31 @@
                 <div class="cab-set"> 
                   <div class="cab-set__title">Change Password</div>
                   <div class="cab-input__title">Введите Текущий Пароль</div>
-                  <label class="cab-input cab-input_set cab-input_icon">
+                  <label class="cab-input cab-input_set cab-input_icon m-input_pass">
                     <input type="text" placeholder="* * * * * *"><img src="assets/img/cab-set-icon-5.svg"/>
+                    <div class="m-input__show">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#show"></use>
+                      </svg>
+                    </div>
                   </label>
                   <div class="cab-input__title">Введите Новый Пароль</div>
-                  <label class="cab-input cab-input_set cab-input_icon">
+                  <label class="cab-input cab-input_set cab-input_icon m-input_pass">
                     <input type="text" placeholder="* * * * * *"><img src="assets/img/cab-set-icon-5.svg"/>
+                    <div class="m-input__show">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#show"></use>
+                      </svg>
+                    </div>
                   </label>
                   <div class="cab-input__title">Подтвердите Новый пароль</div>
-                  <label class="cab-input cab-input_set cab-input_icon">
+                  <label class="cab-input cab-input_set cab-input_icon m-input_pass">
                     <input type="text" placeholder="* * * * * *"><img src="assets/img/cab-set-icon-5.svg"/>
+                    <div class="m-input__show">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#show"></use>
+                      </svg>
+                    </div>
                   </label>
                   <button class="m-btn m-btn_full m-btn_icon"> <img src="assets/img/circle-arrow.svg"/>Изменить пароль 
                   </button>

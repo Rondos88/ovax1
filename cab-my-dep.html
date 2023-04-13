@@ -14,9 +14,11 @@
   </head>
   <body>
     <div class="copy-success">
-      <svg>
-        <use xlink:href="assets/img/sprite.svg#check"></use>
-      </svg>
+      <div class="copy-success__wrap">
+        <div class="copy-success__inner"><img src="assets/img/cloud_check.svg"/>
+          <p>Copied</p>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
       <div class="cab"> 
@@ -728,7 +730,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Уровень</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -876,7 +878,7 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
               </svg>
-              <input class="datepicker-trigger" placeholder="Выберите дату">
+              <input class="datepicker-trigger" placeholder="Выберите дату" readonly autocomplete="off">
             </label>
             <div class="cab-input__title">Тип Операции</div>
             <div class="cab-select cab-select_check custom-select"> 
@@ -1840,11 +1842,11 @@
                         <p>12 Oct 2022, 11:23</p>
                       </div>
                     </div>
-                    <div class="cab-plan__bar tip-trigger" data-tippy-placement="bottom">
+                    <div class="cab-plan__bar">
                       <div class="cab-plan__bar-line">
                         <p style="width: 30%;"><span>30%</span></p>
                         <p style="width: 70%;"><span>70%</span></p>
-                        <div class="tip">
+                        <div class="tip tip-custom">
                           <div class="tip-wrap"> 
                             <div class="tip-text">142 124.123456789
                               <div class="cab-cur">BTC</div>
@@ -2003,11 +2005,11 @@
                         <p>12 Oct 2022, 11:23</p>
                       </div>
                     </div>
-                    <div class="cab-plan__bar tip-trigger" data-tippy-placement="bottom">
+                    <div class="cab-plan__bar">
                       <div class="cab-plan__bar-line">
                         <p style="width: 30%;"><span>30%</span></p>
                         <p class="right" style="width: 70%;"><span>70%</span></p>
-                        <div class="tip">
+                        <div class="tip tip-custom">
                           <div class="tip-wrap"> 
                             <div class="tip-text">142 124.123456789
                               <div class="cab-cur">BTC</div>
@@ -2159,11 +2161,11 @@
                         <p>12 Oct 2022, 11:23</p>
                       </div>
                     </div>
-                    <div class="cab-plan__bar tip-trigger" data-tippy-placement="bottom">
+                    <div class="cab-plan__bar">
                       <div class="cab-plan__bar-line">
                         <p class="left" style="width: 30%;"><span>30%</span></p>
                         <p style="width: 70%;"><span>70%</span></p>
-                        <div class="tip">
+                        <div class="tip tip-custom">
                           <div class="tip-wrap"> 
                             <div class="tip-text">142 124.123456789
                               <div class="cab-cur">BTC</div>
