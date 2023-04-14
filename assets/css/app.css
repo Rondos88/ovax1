@@ -13534,14 +13534,14 @@ input:focus::placeholder {
           width: 2px;
           /* ширина всей полосы прокрутки */ }
         .payment-table table tbody::-webkit-scrollbar-track {
-          background: transparent;
+          background: transparent !important;
           /* цвет зоны отслеживания */ }
         .payment-table table tbody::-webkit-scrollbar-thumb {
-          background-color: #F12A23;
+          background-color: #F12A23 !important;
           /* цвет бегунка */
-          border-radius: 20px;
+          border-radius: 20px !important;
           /* округлось бегунка */
-          border: 0px solid transparent;
+          border: 0px solid transparent !important;
           /* отступ вокруг бегунка */ }
         .payment-table table tbody td {
           background-color: #fff;
@@ -25993,6 +25993,27 @@ input:focus::placeholder {
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.03);
     border-radius: 7px;
     margin-bottom: 28px; }
+    @media (max-width: 767px) {
+      .cab-table tbody {
+        overflow-y: auto;
+        display: block;
+        width: 100%;
+        max-height: 330px;
+        padding-right: 4px;
+        overflow-x: hidden; } }
+    .cab-table tbody::-webkit-scrollbar {
+      width: 2px;
+      /* ширина всей полосы прокрутки */ }
+    .cab-table tbody::-webkit-scrollbar-track {
+      background: transparent !important;
+      /* цвет зоны отслеживания */ }
+    .cab-table tbody::-webkit-scrollbar-thumb {
+      background-color: #F12A23 !important;
+      /* цвет бегунка */
+      border-radius: 20px !important;
+      /* округлось бегунка */
+      border: 0px solid transparent !important;
+      /* отступ вокруг бегунка */ }
     .cab-table__head {
       padding: 12px 30px;
       width: 100%; }
@@ -26149,9 +26170,9 @@ input:focus::placeholder {
         @media (max-width: 767px) {
           .cab-table__wrap table tbody tr {
             border: none;
-            border-radius: 4px;
-            background-color: #fff;
-            margin-bottom: 3px; }
+            border-radius: 10px;
+            background-color: #FBFBFB;
+            margin-bottom: 10px; }
             .cab-table__wrap table tbody tr:last-child {
               margin-bottom: 0; } }
         @media (max-width: 767px) {
