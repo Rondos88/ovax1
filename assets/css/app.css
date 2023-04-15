@@ -25994,20 +25994,20 @@ input:focus::placeholder {
     border-radius: 7px;
     margin-bottom: 28px; }
     @media (max-width: 767px) {
-      .cab-table tbody {
+      .cab-table__balances tbody {
         overflow-y: auto;
         display: block;
         width: 100%;
-        max-height: 330px;
+        max-height: 495px;
         padding-right: 4px;
         overflow-x: hidden; } }
-    .cab-table tbody::-webkit-scrollbar {
+    .cab-table__balances tbody::-webkit-scrollbar {
       width: 2px;
       /* ширина всей полосы прокрутки */ }
-    .cab-table tbody::-webkit-scrollbar-track {
+    .cab-table__balances tbody::-webkit-scrollbar-track {
       background: transparent !important;
       /* цвет зоны отслеживания */ }
-    .cab-table tbody::-webkit-scrollbar-thumb {
+    .cab-table__balances tbody::-webkit-scrollbar-thumb {
       background-color: #F12A23 !important;
       /* цвет бегунка */
       border-radius: 20px !important;
