@@ -268,7 +268,7 @@
       let right = $(window).width()-(position.left)-width;
       console.log(width);
       $('.copy-success').attr('style', 'position: absolute; top: ' + (position.top - off_top) + 'px; right: ' + right + 'px;').fadeIn();
-      $('.copy-success').delay(3000).fadeOut();
+      $('.copy-success').delay(1000).fadeOut();
     });
   }
 

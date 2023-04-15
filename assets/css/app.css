@@ -27336,6 +27336,9 @@ input:focus::placeholder {
         color: #606060;
         height: 100%;
         width: 100%; }
+        @media (max-width: 575px) {
+          .cab-filter__date input {
+            font-size: 16px; } }
       .cab-filter__date > svg {
         position: absolute;
         top: 50%;
@@ -31800,6 +31803,9 @@ input:focus::placeholder {
         .cab-input input {
           font-size: 14px;
           padding: 10px 15px; } }
+      @media (max-width: 575px) {
+        .cab-input input {
+          font-size: 16px; } }
     .cab-input textarea {
       width: 100%;
       border: none;
@@ -32260,6 +32266,9 @@ input:focus::placeholder {
         color: #222222;
         padding-right: 15px;
         padding-left: 0; }
+        @media (max-width: 575px) {
+          .cab-select__search input {
+            font-size: 16px; } }
     .cab-select__btns {
       display: -webkit-flex;
       display: -moz-box;
