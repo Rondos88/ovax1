@@ -26003,15 +26003,15 @@ input:focus::placeholder {
         overflow-x: hidden; } }
     .cab-table__balances tbody::-webkit-scrollbar {
       width: 2px;
-      /* ширина всей полосы прокрутки */ }
+      /* full scroll bar width */ }
     .cab-table__balances tbody::-webkit-scrollbar-track {
       background: transparent !important;
-      /* цвет зоны отслеживания */ }
+      /* Tracking area color */ }
     .cab-table__balances tbody::-webkit-scrollbar-thumb {
       background-color: #F12A23 !important;
       /* цвет бегунка */
       border-radius: 20px !important;
-      /* округлось бегунка */
+      /* rounded runner */
       border: 0px solid transparent !important;
       /* отступ вокруг бегунка */ }
     .cab-table__head {
@@ -26069,18 +26069,18 @@ input:focus::placeholder {
       .cab-table__wrap::-webkit-scrollbar {
         width: 2px;
         height: 5px;
-        /* ширина всей полосы прокрутки */ }
+        /* full scroll bar width */ }
       .cab-table__wrap::-webkit-scrollbar-track {
         background: transparent;
         height: 2px;
-        /* цвет зоны отслеживания */ }
+        /* Tracking area color */ }
       .cab-table__wrap::-webkit-scrollbar-thumb {
         background-color: #F12A23;
-        /* цвет бегунка */
+        /* runner color */
         border-radius: 20px;
-        /* округлось бегунка */
+        /* rounded runner */
         border: 0px solid orange;
-        /* отступ вокруг бегунка */ }
+        /* indent around the runner */ }
       .cab-table__wrap table {
         width: 100%;
         border-collapse: collapse;
@@ -32013,17 +32013,17 @@ input:focus::placeholder {
           overflow-x: hidden; }
           .cab-input_tel .iti__country-list::-webkit-scrollbar {
             width: 2px;
-            /* ширина всей полосы прокрутки */ }
+            /* full scroll bar width */ }
           .cab-input_tel .iti__country-list::-webkit-scrollbar-track {
             background: transparent;
-            /* цвет зоны отслеживания */ }
+            /* Tracking area color */ }
           .cab-input_tel .iti__country-list::-webkit-scrollbar-thumb {
             background-color: #F12A23;
-            /* цвет бегунка */
+            /* runner color */
             border-radius: 20px;
-            /* округлось бегунка */
+            /* rounded runner */
             border: 0px solid orange;
-            /* отступ вокруг бегунка */ }
+            /* indent around the runner */ }
     .cab-input_text {
       min-height: 0; }
     .cab-input_date {
@@ -39247,6 +39247,147 @@ input:focus::placeholder {
   @media (max-width: 767px) {
     .cab-sm-mb__30 {
       margin-bottom: 15px; } }
+
+.chosen-container-multi {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #F5F5F5;
+  border-radius: 7px; }
+  .chosen-container-multi:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    left: 9px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url("../img/status.svg") center no-repeat;
+    background-size: contain;
+    opacity: 0.6; }
+  .chosen-container-multi:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 14px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url("../img/arrow-2.svg") center no-repeat;
+    background-size: contain;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    cursor: pointer; }
+  .chosen-container-multi .chosen-choices {
+    border: none;
+    height: 44px;
+    background-image: none;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    padding: 0 35px 0 0;
+    margin: 0 0 0 35px;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    cursor: pointer;
+    background: transparent;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .chosen-container-multi .chosen-choices li.search-field {
+      height: 100%;
+      width: 100%; }
+      .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+        height: 100%;
+        width: 100% !important; }
+    .chosen-container-multi .chosen-choices li.search-choice {
+      height: 32px;
+      background-color: #F12A23;
+      border-radius: 7px;
+      background-image: none;
+      color: #ffffff;
+      border: 0;
+      box-shadow: none;
+      line-height: 27px;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 500;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+         -moz-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: inherit;
+      padding-right: 10px; }
+      .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 15px;
+        background: url("../img/close-4.svg") center no-repeat !important;
+        width: 15px;
+        height: 15px; }
+        .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+          background-position: center; }
+  .chosen-container-multi .chosen-results {
+    padding-right: 20px; }
+
+.chosen-container-active {
+  border-color: #F12A23; }
+  .chosen-container-active .chosen-choices {
+    box-shadow: none; }
+
+.chosen-container .chosen-drop {
+  margin-top: 10px;
+  background: #FFFFFF;
+  border: 3px solid #E9E9E9;
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 5px 5px 5px 25px; }
+
+.chosen-container .chosen-results::-webkit-scrollbar {
+  width: 2px;
+  /* full scroll bar width */ }
+
+.chosen-container .chosen-results::-webkit-scrollbar-track {
+  background: transparent !important;
+  /* Tracking area color */ }
+
+.chosen-container .chosen-results::-webkit-scrollbar-thumb {
+  background-color: #F12A23 !important;
+  /* цвет бегунка */
+  border-radius: 20px !important;
+  /* rounded runner */
+  border: 0px solid transparent !important;
+  /* отступ вокруг бегунка */ }
+
+.chosen-container .chosen-results li {
+  padding: 15px 0px;
+  border-bottom: 1px solid #F5F5F5; }
+  .chosen-container .chosen-results li.highlighted {
+    background-image: none;
+    background-color: transparent;
+    color: #F12A23; }
+
+.chosen-select {
+  opacity: 0;
+  pointer-events: none;
+  display: none; }
 
 .recovery-texts {
   margin-bottom: 30px; }

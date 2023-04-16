@@ -87,7 +87,7 @@
     }
   }
 
-  $('select').not('.sel-search').styler({
+  $('select').not('.sel-search,.chosen-select').styler({
     onFormStyled: function () {
       $('.jq-selectbox.sel-text').each(function () {
         changeSelectInitText($(this));
@@ -97,6 +97,10 @@
       changeSelectClosedText($(this));
     },
   });
+
+  if($('.chosen-select').length){
+    $(".chosen-select").chosen({width: "100%"});
+  }
 
   $('select.sel-search').styler({
     selectSearch: true,
@@ -729,7 +733,7 @@
     toggleItem.fadeToggle();
     $('.custom-select__drop').not(toggleItem).fadeOut();
     $('.custom-select').not(thisSelect).removeClass('active');
-  })
+  });
 
   var customSelectDrop = (btn, modal, e) => {
     if (!btn.is(e.target) && btn.has(e.target).length === 0 &&

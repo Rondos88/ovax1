@@ -2058,37 +2058,32 @@
                           </div>
                         </div>
                       </div>
-                      <div class="cab-filter__select cab-filter__select_status">
-                        <svg>
-                          <use xlink:href="assets/img/sprite.svg#status"></use>
-                        </svg>
-                        <div class="cab-select custom-select selected">
-                          <svg>
-                            <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
-                          </svg>
-                          <div class="cab-select__clear"> 
-                            <svg>
-                              <use xlink:href="assets/img/sprite.svg#close-4"></use>
-                            </svg>
-                          </div>
-                          <div class="cab-select__btn custom-select__btn"> 
-                            <p>Completed</p>
-                          </div>
-                          <div class="cab-select__drop custom-select__drop"> 
-                            <div class="cab-select__list custom-select__list">
-                              <div class="custom-select__item cab-select__item active">
-                                <p>Completed</p>
-                              </div>
-                              <div class="custom-select__item cab-select__item">
-                                <p>Completed</p>
-                              </div>
-                              <div class="custom-select__item cab-select__item">
-                                <p>Completed</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="cab-filter__select">
+                        <select class="chosen-select" data-placeholder="Choose an option" multiple>
+                          <option value="1">Test1</option>
+                          <option value="2">Test2Test1</option>
+                          <option value="3">Test3Test1Test1</option>
+                          <option value="4">Test4Test1</option>
+                          <option value="5">Test5</option>
+                          <option value="6">Test6</option>
+                        </select>
                       </div>
+                      <!--.cab-filter__select.cab-filter__select_status-->
+                      <!--  +svg('status')-->
+                      <!--  .cab-select.custom-select.selected-->
+                      <!--    +svg('arrow-2')-->
+                      <!--    .cab-select__clear-->
+                      <!--      +svg('close-4')-->
+                      <!--    .cab-select__btn.custom-select__btn-->
+                      <!--      p Completed-->
+                      <!--    .cab-select__drop.custom-select__drop-->
+                      <!--      .cab-select__list.custom-select__list-->
+                      <!--        .custom-select__item.cab-select__item.active-->
+                      <!--          p Completed-->
+                      <!--        .custom-select__item.cab-select__item-->
+                      <!--          p Completed-->
+                      <!--        .custom-select__item.cab-select__item-->
+                      <!--          p Completed-->
                       <div class="cab-filter__clear">Clear All
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#close-4"></use>
