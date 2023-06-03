@@ -763,6 +763,27 @@
     customSelectChange($(this));
   })
 
+  /*
+  const select = document.getElementById('sela');
+  const popup = document.getElementById('dropa');
+
+
+  const selectRect = select.getBoundingClientRect();
+  const popupRect = popup.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
+
+  if (selectRect.bottom + popupRect.height > windowHeight) {
+    // Недостаточно места под селектом, отображаем всплывающее окно над ним
+    popup.style.top = 'auto';
+    popup.style.bottom = '0';
+  } else {
+    // Достаточно места под селектом, отображаем всплывающее окно под ним
+    popup.style.top = selectRect.bottom + 'px';
+    popup.style.bottom = 'auto';
+  }
+*/
+
   // sliders
 
   var footerCur = new Swiper('.footer-cur .swiper', {

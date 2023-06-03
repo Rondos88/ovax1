@@ -3437,7 +3437,11 @@ input:focus::placeholder {
       pointer-events: none;
       -webkit-transform: translateY(-20px);
          -moz-transform: translateY(-20px);
-              transform: translateY(-20px); }
+              transform: translateY(-20px);
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
       .header-lang__hide:before {
         position: absolute;
         bottom: 100%;
@@ -3449,13 +3453,13 @@ input:focus::placeholder {
         position: absolute;
         bottom: 100%;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-           -moz-transform: translateX(-50%);
-                transform: translateX(-50%);
+        -webkit-transform: translateX(-78px);
+           -moz-transform: translateX(-78px);
+                transform: translateX(-78px);
         border: 6px solid transparent;
         border-bottom-color: #fff;
         content: ''; }
-      .header-lang__hide > a {
+      .header-lang__hide a {
         display: -webkit-flex;
         display: -moz-box;
         display: -ms-flexbox;
@@ -3479,10 +3483,22 @@ input:focus::placeholder {
         border-radius: 4px;
         padding: 12px;
         margin-bottom: 4px; }
-        .header-lang__hide > a:last-child {
+        .header-lang__hide a:last-child {
           margin-bottom: 0; }
-        .header-lang__hide > a:hover, .header-lang__hide > a.active {
+        .header-lang__hide a:hover, .header-lang__hide a.active {
           background-color: #F5F5F5; }
+      .header-lang__hide-col {
+        margin-right: 4px; }
+        .header-lang__hide-col:last-child {
+          margin-right: 0; }
+      @media (max-width: 767px) {
+        .header-lang__hide {
+          left: auto;
+          right: 0; }
+          .header-lang__hide:after {
+            -webkit-transform: translateX(66px);
+               -moz-transform: translateX(66px);
+                    transform: translateX(66px); } }
   .header-btns {
     display: -webkit-flex;
     display: -moz-box;
@@ -23148,7 +23164,11 @@ input:focus::placeholder {
       pointer-events: none;
       -webkit-transform: translateY(-50px);
          -moz-transform: translateY(-50px);
-              transform: translateY(-50px); }
+              transform: translateY(-50px);
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
       .cab-lang__hide:before {
         position: absolute;
         bottom: 100%;
@@ -23160,13 +23180,13 @@ input:focus::placeholder {
         position: absolute;
         bottom: 100%;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-           -moz-transform: translateX(-50%);
-                transform: translateX(-50%);
+        -webkit-transform: translateX(-78px);
+           -moz-transform: translateX(-78px);
+                transform: translateX(-78px);
         border: 6px solid transparent;
         border-bottom-color: #fff;
         content: ''; }
-      .cab-lang__hide > a {
+      .cab-lang__hide a {
         display: -webkit-flex;
         display: -moz-box;
         display: -ms-flexbox;
@@ -23190,9 +23210,9 @@ input:focus::placeholder {
         border-radius: 4px;
         padding: 12px;
         margin-bottom: 4px; }
-        .cab-lang__hide > a:last-child {
+        .cab-lang__hide a:last-child {
           margin-bottom: 0; }
-        .cab-lang__hide > a:hover, .cab-lang__hide > a.active {
+        .cab-lang__hide a:hover, .cab-lang__hide a.active {
           background-color: #F5F5F5; }
   .cab-msg {
     max-width: 89px;
@@ -30573,8 +30593,6 @@ input:focus::placeholder {
         text-transform: uppercase;
         font-size: 10px; }
     .cab-turn__bar {
-      width: -moz-calc(100% - 20px);
-      width: calc(100% - 20px);
       background-image: url(../img/cab-prog-bg.png);
       background-repeat: no-repeat;
       background-position: 0 50%;
@@ -30582,8 +30600,6 @@ input:focus::placeholder {
       border-radius: 20px;
       height: 16px;
       margin-bottom: 10px;
-      margin-left: 10px;
-      margin-right: 10px;
       position: relative; }
       .cab-turn__bar span {
         position: absolute;
