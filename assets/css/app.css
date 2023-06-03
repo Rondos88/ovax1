@@ -10746,7 +10746,7 @@ input:focus::placeholder {
       @media (max-width: 991px) {
         .faq-content .nicescroll-box {
           padding-right: 0;
-          max-height: auto; } }
+          max-height: none; } }
       .faq-content .nicescroll-box:after {
         position: absolute;
         top: 0;
