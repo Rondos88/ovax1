@@ -13133,6 +13133,9 @@ input:focus::placeholder {
           fill: #5487E3; }
         .sign-auth__input input:valid + svg {
           fill: #5487E3; }
+        @media (max-width: 767px) {
+          .sign-auth__input input {
+            font-size: 16px; } }
       .sign-auth__input svg {
         position: absolute;
         top: 50%;
