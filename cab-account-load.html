@@ -254,10 +254,10 @@
                   </div><a class="cab-notify" href="#">
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
-                    </svg><span>25</span></a><a class="cab-notify" href="#"> 
+                    </svg><span>1</span></a><a class="cab-notify" href="#"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
-                    </svg><span>2</span></a>
+                    </svg><span>99+</span></a>
                   <div class="cab-set-btn"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
@@ -3781,65 +3781,52 @@
                       <use xlink:href="assets/img/sprite.svg#arrow-2"></use>
                     </svg></a>
                 </div>
-                <div class="cab-last"> 
-                  <div class="cab-last__item xrp">
-                    <div class="cab-last__head"> <img src="assets/img/cab-case.png"/>
-                      <p>Plan</p>
-                      <div class="cab-last__title"> 
-                        <h3>Interprise <span>(1.30-1.50%)</span></h3>
-                        <div class="cab-status">Активный
-                          <div class="cab-status__icon"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="cab-last__content"> 
-                      <div class="cab-last__row cab-last__row_icon"> 
-                        <div class="cab-last__icon"> 
-                          <div class="cab-last__icon-bg"></div>
-                          <div class="cab-last__icon-box">
-                            <svg>
-                              <use xlink:href="assets/img/sprite.svg#xrp-logo"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="cab-last__col"> 
-                          <div class="cab-last__subtitle">Amount</div>
-                        </div>
-                        <div class="cab-last__col"> 
-                          <div class="cab-last__val">43572.12345678
-                            <div class="cab-cur">XRP</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cab-last__row"> 
-                        <div class="cab-last__col"> 
-                          <div class="cab-last__subtitle">Data</div>
-                          <div class="cab-last__date">14 Jule 2022, <span>11:23</span></div>
-                        </div>
-                        <div class="cab-last__col"> 
-                          <div class="cab-last__box">
-                            <div class="cab-last__subtitle">Profit recieved</div>
-                            <div class="cab-last__val">0.00000000
-                              <div class="cab-cur">XRP</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="cab-last">
+                  <!-- - cur.shift();-->
+                  <!-- each item, index in cur-->
+                  <!--   div(class='cab-last__item '+item.code)-->
+                  <!--     .cab-last__head-->
+                  <!--       +img('cab-case', 'png')-->
+                  <!--       p Plan-->
+                  <!--       .cab-last__title-->
+                  <!--         h3 Interprise-->
+                  <!--           span (1.30-1.50%)-->
+                  <!--         .cab-status Активный-->
+                  <!--           .cab-status__icon-->
+                  <!--     .cab-last__content-->
+                  <!--       .cab-last__row.cab-last__row_icon-->
+                  <!--         .cab-last__icon-->
+                  <!--           .cab-last__icon-bg-->
+                  <!--           .cab-last__icon-box-->
+                  <!--             +svg(item.code+'-logo')-->
+                  <!--         .cab-last__col-->
+                  <!--           .cab-last__subtitle Amount-->
+                  <!--         .cab-last__col-->
+                  <!--           .cab-last__val 43572.12345678-->
+                  <!--             .cab-cur=item.code-->
+                  <!--       .cab-last__row-->
+                  <!--         .cab-last__col-->
+                  <!--           .cab-last__subtitle Data-->
+                  <!--           .cab-last__date 14 Jule 2022,-->
+                  <!--             span 11:23-->
+                  <!--         .cab-last__col-->
+                  <!--           .cab-last__box-->
+                  <!--             .cab-last__subtitle Profit recieved-->
+                  <!--             .cab-last__val 0.00000000-->
+                  <!--               .cab-cur=item.code-->
                   <div class="cab-last__item btc">
-                    <div class="cab-last__head"> <img src="assets/img/cab-case.png"/>
+                    <div class="cab-last__head"><img src="assets/img/cab-case.png"/>
                       <p>Plan</p>
-                      <div class="cab-last__title"> 
-                        <h3>Interprise <span>(1.30-1.50%)</span></h3>
+                      <div class="cab-last__title">
+                        <h3>Interprise<span>(1.30-1.50%)</span></h3>
                         <div class="cab-status">Активный
                           <div class="cab-status__icon"></div>
                         </div>
                       </div>
                     </div>
-                    <div class="cab-last__content"> 
-                      <div class="cab-last__row cab-last__row_icon"> 
-                        <div class="cab-last__icon"> 
+                    <div class="cab-last__content">
+                      <div class="cab-last__row cab-last__row_icon">
+                        <div class="cab-last__icon">
                           <div class="cab-last__icon-bg"></div>
                           <div class="cab-last__icon-box">
                             <svg>
@@ -3847,21 +3834,66 @@
                             </svg>
                           </div>
                         </div>
-                        <div class="cab-last__col"> 
+                        <div class="cab-last__col">
                           <div class="cab-last__subtitle">Amount</div>
                         </div>
-                        <div class="cab-last__col"> 
+                        <div class="cab-last__col">
                           <div class="cab-last__val">43572.12345678
                             <div class="cab-cur">btc</div>
                           </div>
                         </div>
                       </div>
-                      <div class="cab-last__row"> 
-                        <div class="cab-last__col"> 
+                      <div class="cab-last__row">
+                        <div class="cab-last__col">
                           <div class="cab-last__subtitle">Data</div>
-                          <div class="cab-last__date">14 Jule 2022, <span>11:23</span></div>
+                          <div class="cab-last__date">14 Jule 2022,<span>11:23</span></div>
                         </div>
-                        <div class="cab-last__col"> 
+                        <div class="cab-last__col">
+                          <div class="cab-last__box">
+                            <div class="cab-last__subtitle">Profit recieved</div>
+                            <div class="cab-last__val">0.00000000
+                              <div class="cab-cur">btc</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cab-last__item btc">
+                    <div class="cab-last__head"><img src="assets/img/cab-case.png"/>
+                      <p>Plan</p>
+                      <div class="cab-last__title">
+                        <h3>Interprise<span>(1.30-1.50%)</span></h3>
+                        <div class="cab-status">Активный
+                          <div class="cab-status__icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cab-last__content">
+                      <div class="cab-last__row cab-last__row_icon">
+                        <div class="cab-last__icon">
+                          <div class="cab-last__icon-bg"></div>
+                          <div class="cab-last__icon-box">
+                            <svg>
+                              <use xlink:href="assets/img/sprite.svg#btc-logo"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="cab-last__col">
+                          <div class="cab-last__subtitle">Amount</div>
+                        </div>
+                        <div class="cab-last__col">
+                          <div class="cab-last__val">43572.12345678
+                            <div class="cab-cur">btc</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cab-last__row">
+                        <div class="cab-last__col">
+                          <div class="cab-last__subtitle">Data</div>
+                          <div class="cab-last__date">14 Jule 2022,<span>11:23</span></div>
+                        </div>
+                        <div class="cab-last__col">
                           <div class="cab-last__box">
                             <div class="cab-last__subtitle">Profit recieved</div>
                             <div class="cab-last__val">0.00000000
@@ -4990,7 +5022,7 @@
                 </div>
               </div>
             </div>
-            <button class="cab-btn cab-btn_black cab-btn_full">скачать выписку</button>
+            <button class="cab-btn cab-btn_black cab-btn_full" disabled>скачать выписку</button>
           </div>
         </div>
         <div class="cab-modal" id="modal-17">
@@ -5071,6 +5103,12 @@
                     </svg>
                     <h3>Получение нового ранга</h3>
                   </div>
+                  <div class="custom-select__item cab-select__item">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#check"></use>
+                    </svg>
+                    <h3>Very long option with very long text</h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -5097,6 +5135,13 @@
                       <use xlink:href="assets/img/sprite.svg#check"></use>
                     </svg>
                     <h3>Все валюты</h3>
+                  </div>
+                  <div class="custom-select__item cab-select__item">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#check"></use>
+                    </svg>
+                    <h3><img src="assets/img/all-2.svg"/>All currencies
+                    </h3>
                   </div>
                   <div class="custom-select__item cab-select__item">
                     <svg>
@@ -5207,7 +5252,7 @@
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#check"></use>
                     </svg>
-                    <h3><img src="assets/img/ethc-2.svg"/>Ethereum Classic
+                    <h3><img src="assets/img/etc-2.svg"/>Ethereum Classic
                     </h3>
                   </div>
                   <div class="custom-select__item cab-select__item">
@@ -5235,7 +5280,7 @@
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#check"></use>
                     </svg>
-                    <h3><img src="assets/img/monero-2.svg"/>Monero
+                    <h3><img src="assets/img/xmr-2.svg"/>Monero
                     </h3>
                   </div>
                   <div class="custom-select__item cab-select__item">
@@ -5270,7 +5315,7 @@
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#check"></use>
                     </svg>
-                    <h3><img src="assets/img/ftx-2.svg"/>FTX
+                    <h3><img src="assets/img/ftt-2.svg"/>FTX
                     </h3>
                   </div>
                   <div class="custom-select__item cab-select__item">

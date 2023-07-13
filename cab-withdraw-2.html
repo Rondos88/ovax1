@@ -882,7 +882,7 @@
                   </div>
                 </div>
               </div>
-              <button class="cab-btn cab-btn_black cab-btn_full">скачать выписку</button>
+              <button class="cab-btn cab-btn_black cab-btn_full" disabled>скачать выписку</button>
             </div>
           </div>
           <div class="cab-modal" id="modal-17">
@@ -963,6 +963,12 @@
                       </svg>
                       <h3>Получение нового ранга</h3>
                     </div>
+                    <div class="custom-select__item cab-select__item">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#check"></use>
+                      </svg>
+                      <h3>Very long option with very long text</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -989,6 +995,13 @@
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
                       <h3>Все валюты</h3>
+                    </div>
+                    <div class="custom-select__item cab-select__item">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#check"></use>
+                      </svg>
+                      <h3><img src="assets/img/all-2.svg"/>All currencies
+                      </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
                       <svg>
@@ -1099,7 +1112,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/ethc-2.svg"/>Ethereum Classic
+                      <h3><img src="assets/img/etc-2.svg"/>Ethereum Classic
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1127,7 +1140,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/monero-2.svg"/>Monero
+                      <h3><img src="assets/img/xmr-2.svg"/>Monero
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1162,7 +1175,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/ftx-2.svg"/>FTX
+                      <h3><img src="assets/img/ftt-2.svg"/>FTX
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1665,10 +1678,10 @@
                   </div><a class="cab-notify" href="#">
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
-                    </svg><span>25</span></a><a class="cab-notify" href="#"> 
+                    </svg><span>1</span></a><a class="cab-notify" href="#"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
-                    </svg><span>2</span></a>
+                    </svg><span>99+</span></a>
                   <div class="cab-set-btn"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
@@ -1733,6 +1746,10 @@
                         </div>
                         <div class="cab-select__drop custom-select__drop"> 
                           <div class="cab-select__list custom-select__list">
+                            <div class="custom-select__item cab-select__item"><img src="assets/img/all.svg"/>
+                              <h3>All currencies<span> (all)</span></h3>
+                              <p>0.00000125</p>
+                            </div>
                             <div class="custom-select__item cab-select__item"><img src="assets/img/usd.svg"/>
                               <h3>U.S. Dollar<span> (usd)</span></h3>
                               <p>0.00000125</p>
@@ -1793,8 +1810,8 @@
                               <h3>Cronos<span> (cro)</span></h3>
                               <p>0.00000125</p>
                             </div>
-                            <div class="custom-select__item cab-select__item"><img src="assets/img/ethc.svg"/>
-                              <h3>Ethereum Classic<span> (ethc)</span></h3>
+                            <div class="custom-select__item cab-select__item"><img src="assets/img/etc.svg"/>
+                              <h3>Ethereum Classic<span> (etc)</span></h3>
                               <p>0.00000125</p>
                             </div>
                             <div class="custom-select__item cab-select__item"><img src="assets/img/doge.svg"/>
@@ -1809,8 +1826,8 @@
                               <h3>Flow<span> (flow)</span></h3>
                               <p>0.00000125</p>
                             </div>
-                            <div class="custom-select__item cab-select__item"><img src="assets/img/monero.svg"/>
-                              <h3>Monero<span> (monero)</span></h3>
+                            <div class="custom-select__item cab-select__item"><img src="assets/img/xmr.svg"/>
+                              <h3>Monero<span> (xmr)</span></h3>
                               <p>0.00000125</p>
                             </div>
                             <div class="custom-select__item cab-select__item"><img src="assets/img/link.svg"/>
@@ -1829,8 +1846,8 @@
                               <h3>Polkadot<span> (dot)</span></h3>
                               <p>0.00000125</p>
                             </div>
-                            <div class="custom-select__item cab-select__item"><img src="assets/img/ftx.svg"/>
-                              <h3>FTX<span> (ftx)</span></h3>
+                            <div class="custom-select__item cab-select__item"><img src="assets/img/ftt.svg"/>
+                              <h3>FTX<span> (ftt)</span></h3>
                               <p>0.00000125</p>
                             </div>
                             <div class="custom-select__item cab-select__item"><img src="assets/img/xlm.svg"/>
@@ -2035,6 +2052,10 @@
                               <div class="cab-select__btns-item">BEP20</div>
                             </div>
                             <div class="cab-select__list custom-select__list">
+                              <div class="custom-select__item cab-select__item"><img src="assets/img/all.svg"/>
+                                <h3>All currencies<span> (all)</span></h3>
+                                <p>0.00000125</p>
+                              </div>
                               <div class="custom-select__item cab-select__item"><img src="assets/img/usd.svg"/>
                                 <h3>U.S. Dollar<span> (usd)</span></h3>
                                 <p>0.00000125</p>
@@ -2095,8 +2116,8 @@
                                 <h3>Cronos<span> (cro)</span></h3>
                                 <p>0.00000125</p>
                               </div>
-                              <div class="custom-select__item cab-select__item"><img src="assets/img/ethc.svg"/>
-                                <h3>Ethereum Classic<span> (ethc)</span></h3>
+                              <div class="custom-select__item cab-select__item"><img src="assets/img/etc.svg"/>
+                                <h3>Ethereum Classic<span> (etc)</span></h3>
                                 <p>0.00000125</p>
                               </div>
                               <div class="custom-select__item cab-select__item"><img src="assets/img/doge.svg"/>
@@ -2111,8 +2132,8 @@
                                 <h3>Flow<span> (flow)</span></h3>
                                 <p>0.00000125</p>
                               </div>
-                              <div class="custom-select__item cab-select__item"><img src="assets/img/monero.svg"/>
-                                <h3>Monero<span> (monero)</span></h3>
+                              <div class="custom-select__item cab-select__item"><img src="assets/img/xmr.svg"/>
+                                <h3>Monero<span> (xmr)</span></h3>
                                 <p>0.00000125</p>
                               </div>
                               <div class="custom-select__item cab-select__item"><img src="assets/img/link.svg"/>
@@ -2131,8 +2152,8 @@
                                 <h3>Polkadot<span> (dot)</span></h3>
                                 <p>0.00000125</p>
                               </div>
-                              <div class="custom-select__item cab-select__item"><img src="assets/img/ftx.svg"/>
-                                <h3>FTX<span> (ftx)</span></h3>
+                              <div class="custom-select__item cab-select__item"><img src="assets/img/ftt.svg"/>
+                                <h3>FTX<span> (ftt)</span></h3>
                                 <p>0.00000125</p>
                               </div>
                               <div class="custom-select__item cab-select__item"><img src="assets/img/xlm.svg"/>

@@ -882,7 +882,7 @@
                   </div>
                 </div>
               </div>
-              <button class="cab-btn cab-btn_black cab-btn_full">скачать выписку</button>
+              <button class="cab-btn cab-btn_black cab-btn_full" disabled>скачать выписку</button>
             </div>
           </div>
           <div class="cab-modal" id="modal-17">
@@ -963,6 +963,12 @@
                       </svg>
                       <h3>Получение нового ранга</h3>
                     </div>
+                    <div class="custom-select__item cab-select__item">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#check"></use>
+                      </svg>
+                      <h3>Very long option with very long text</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -989,6 +995,13 @@
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
                       <h3>Все валюты</h3>
+                    </div>
+                    <div class="custom-select__item cab-select__item">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#check"></use>
+                      </svg>
+                      <h3><img src="assets/img/all-2.svg"/>All currencies
+                      </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
                       <svg>
@@ -1099,7 +1112,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/ethc-2.svg"/>Ethereum Classic
+                      <h3><img src="assets/img/etc-2.svg"/>Ethereum Classic
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1127,7 +1140,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/monero-2.svg"/>Monero
+                      <h3><img src="assets/img/xmr-2.svg"/>Monero
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1162,7 +1175,7 @@
                       <svg>
                         <use xlink:href="assets/img/sprite.svg#check"></use>
                       </svg>
-                      <h3><img src="assets/img/ftx-2.svg"/>FTX
+                      <h3><img src="assets/img/ftt-2.svg"/>FTX
                       </h3>
                     </div>
                     <div class="custom-select__item cab-select__item">
@@ -1665,10 +1678,10 @@
                   </div><a class="cab-notify" href="#">
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-7"></use>
-                    </svg><span>25</span></a><a class="cab-notify" href="#"> 
+                    </svg><span>1</span></a><a class="cab-notify" href="#"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-9"></use>
-                    </svg><span>2</span></a>
+                    </svg><span>99+</span></a>
                   <div class="cab-set-btn"> 
                     <svg>
                       <use xlink:href="assets/img/sprite.svg#cab-menu-8"></use>
@@ -2257,6 +2270,169 @@
             </div>
             <div class="row">
               <div class="col-xxl-4 col-lg-6">
+                <div class="cab-plan all">
+                  <div class="cab-plan__head">
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-auto">
+                        <div class="cab-plan__name">
+                          <h3>Basic</h3>
+                          <p>1.00% - 1.25% daily</p>
+                        </div>
+                      </div>
+                      <div class="col-auto"><a class="popup cab-plan__btn" href="#123">
+                          <svg>
+                            <use xlink:href="assets/img/sprite.svg#plan-chart"></use>
+                          </svg>Profit Chart</a></div>
+                    </div>
+                    <div class="cab-plan__bar-info">
+                      <div class="cab-plan__bar-info__item">
+                        <h3>Дата Открытия</h3>
+                        <p>12 Oct 2022, 11:23</p>
+                      </div>
+                      <div class="cab-plan__bar-info__item">
+                        <h3>Дата Закрытия</h3>
+                        <p>12 Oct 2022, 11:23</p>
+                      </div>
+                    </div>
+                    <div class="cab-plan__bar">
+                      <div class="cab-plan__bar-line">
+                        <p style="width: 30%;"><span>30%</span></p>
+                        <p style="width: 70%;"><span>70%</span></p>
+                        <div class="tip tip-custom">
+                          <div class="tip-wrap">
+                            <div class="tip-text">142 124.123456789
+                              <div class="cab-cur">BTC</div>
+                              <div class="tip-percent">25.75%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cab-plan__content">
+                    <div class="cab-plan__icon"><img src="assets/img/all-2.svg"/>
+                    </div>
+                    <div class="cab-plan__info">
+                      <div class="cab-plan__info-head">
+                        <div class="cab-plan__info-name">Bitcoin (BTC)</div>
+                        <div class="cab-plan__info-id">ID:<span>12345678</span>
+                          <div class="cab-plan__info-copy">
+                            <svg>
+                              <use xlink:href="assets/img/sprite.svg#copy"></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cab-plan__info-list">
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title">Инвестированно</div>
+                          <div class="cab-plan__info-val"><span>13 541.123456789</span>
+                            <div class="cab-cur">BTC</div>
+                          </div>
+                        </div>
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title tip-trigger">Срок Депозита
+                            <div class="tip">
+                              <div class="tip-icon"><img src="assets/img/i.svg"/>
+                              </div>
+                              <div class="tip-wrap">
+                                <div class="tip-text">Lorem ipsum dolor sit amet.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cab-plan__info-days">50 дней</div>
+                        </div>
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title">Прошло Дней</div>
+                          <div class="cab-plan__info-days">13 дней</div>
+                        </div>
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title">Получено Прибыли</div>
+                          <div class="cab-plan__info-val green"><span>13 541.123456789</span>
+                            <div class="cab-cur">BTC</div>
+                          </div>
+                          <div class="cab-plan__info-more">
+                            <p><span>26.356<sub>%</sub></span></p>
+                          </div>
+                        </div>
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title tip-trigger">Ожидаемая Прибыль
+                            <div class="tip">
+                              <div class="tip-icon"><img src="assets/img/i.svg"/>
+                              </div>
+                              <div class="tip-wrap">
+                                <div class="tip-text">Lorem ipsum dolor sit amet.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cab-plan__info-val"><span>13 541.123456789</span>
+                            <div class="cab-cur">BTC</div>
+                          </div>
+                          <div class="cab-plan__info-more">
+                            <p><span>26.356<sub>%</sub></span></p>
+                            <p class="green">Чистая прибыль</p>
+                          </div>
+                        </div>
+                        <div class="cab-plan__info-item">
+                          <div class="cab-plan__info-title">Ожидаемая Прибыль</div>
+                          <div class="cab-plan__info-val"><span>13 541.123456789</span>
+                            <div class="cab-cur">BTC</div>
+                          </div>
+                          <div class="cab-plan__info-more">
+                            <p><span>26.356<sub>%</sub></span></p>
+                            <p class="blue">С депозитом</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cab-plan__percent">
+                      <div class="cab-plan__percent-col">
+                        <h3>Процент Вчера</h3>
+                        <p>+0,50%</p>
+                      </div>
+                      <div class="cab-plan__percent-col">
+                        <h3>Процент Сегодня</h3>
+                        <p>+0,50%</p>
+                      </div>
+                    </div>
+                    <div class="cab-plan__bot">
+                      <div class="cab-plan__bot-col">
+                        <div class="cab-plan__bot-title">Последнее Начисление</div>
+                        <div class="cab-plan__date">
+                          <h3>15 October 2022, 10:47</h3>
+                          <p>Вчера</p>
+                        </div>
+                      </div>
+                      <div class="cab-plan__bot-col">
+                        <div class="cab-plan__bot-title tip-trigger">Следующее Начисление
+                          <div class="tip">
+                            <div class="tip-icon"><img src="assets/img/i.svg"/>
+                            </div>
+                            <div class="tip-wrap">
+                              <div class="tip-text">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cab-plan__time">
+                          <div class="cab-plan__time-col">
+                            <div class="cab-plan__time-num"><span>1</span><span>2</span></div>
+                            <p>Часов</p>
+                          </div><span>:</span>
+                          <div class="cab-plan__time-col">
+                            <div class="cab-plan__time-num"><span>4</span><span>4</span></div>
+                            <p>Минут</p>
+                          </div><span>:</span>
+                          <div class="cab-plan__time-col">
+                            <div class="cab-plan__time-num"><span>3</span><span>8</span></div>
+                            <p>Секунд</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-lg-6">
                 <div class="cab-plan usd">
                   <div class="cab-plan__head">
                     <div class="row d-flex align-items-center justify-content-between">
@@ -2297,7 +2473,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/usd.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/usd-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -2460,7 +2636,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/btc.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/btc-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -2623,7 +2799,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/eth.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/eth-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -2786,7 +2962,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/ltc.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/ltc-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -2949,7 +3125,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/trx.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/trx-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3112,7 +3288,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/usdt.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/usdt-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3275,7 +3451,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/usdc.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/usdc-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3438,7 +3614,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/busd.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/busd-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3601,7 +3777,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/bnb.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/bnb-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3764,7 +3940,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/ada.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/ada-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -3927,7 +4103,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/xrp.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/xrp-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4090,7 +4266,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/bch.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/bch-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4253,7 +4429,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/dai.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/dai-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4416,7 +4592,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/sol.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/sol-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4579,7 +4755,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/cro.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/cro-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4702,7 +4878,7 @@
                 </div>
               </div>
               <div class="col-xxl-4 col-lg-6">
-                <div class="cab-plan ethc">
+                <div class="cab-plan etc">
                   <div class="cab-plan__head">
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-auto">
@@ -4742,7 +4918,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/ethc.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/etc-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -4905,7 +5081,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/doge.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/doge-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5068,7 +5244,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/avax.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/avax-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5231,7 +5407,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/flow.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/flow-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5354,7 +5530,7 @@
                 </div>
               </div>
               <div class="col-xxl-4 col-lg-6">
-                <div class="cab-plan monero">
+                <div class="cab-plan xmr">
                   <div class="cab-plan__head">
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-auto">
@@ -5394,7 +5570,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/monero.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/xmr-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5557,7 +5733,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/link.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/link-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5720,7 +5896,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/atom.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/atom-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -5883,7 +6059,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/algo.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/algo-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6046,7 +6222,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/dot.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/dot-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6169,7 +6345,7 @@
                 </div>
               </div>
               <div class="col-xxl-4 col-lg-6">
-                <div class="cab-plan ftx">
+                <div class="cab-plan ftt">
                   <div class="cab-plan__head">
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-auto">
@@ -6209,7 +6385,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/ftx.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/ftt-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6372,7 +6548,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/xlm.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/xlm-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6535,7 +6711,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/matic.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/matic-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6698,7 +6874,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/near.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/near-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -6861,7 +7037,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/tusd.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/tusd-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -7024,7 +7200,7 @@
                     </div>
                   </div>
                   <div class="cab-plan__content">
-                    <div class="cab-plan__icon"><img src="assets/img/usdp.svg"/>
+                    <div class="cab-plan__icon"><img src="assets/img/usdp-2.svg"/>
                     </div>
                     <div class="cab-plan__info">
                       <div class="cab-plan__info-head">
@@ -7312,7 +7488,7 @@
                           <p>1.00% - 1.25% daily</p>
                         </div>
                       </div>
-                      <div class="col-auto"><a class="popup cab-plan__btn" href="#123">
+                      <div class="col-auto"><a class="popup cab-plan__btn disabled" href="#123">
                           <svg>
                             <use xlink:href="assets/img/sprite.svg#plan-chart"></use>
                           </svg>Profit Chart</a></div>

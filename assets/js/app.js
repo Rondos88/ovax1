@@ -1,6 +1,15 @@
 (function () {
   'use strict';
 
+  if($('.header-down').length){
+    $('.header-down').click(function() {
+      $('html, body').animate({
+        scrollTop: $('.about').offset().top
+      }, 1000); // Здесь можно настроить время анимации (в миллисекундах)
+    });
+  }
+
+
   //menu fix mobile
 
   let vh = window.innerHeight * 0.01;
